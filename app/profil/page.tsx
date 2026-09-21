@@ -77,6 +77,43 @@ export default function ProfilPage() {
 
       </div>
 
+      {/* KANTOR BALAI DESA / KELURAHAN PHOTO SHOWCASE */}
+      <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-emerald-100 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div className="md:col-span-6 rounded-2xl overflow-hidden shadow-md border border-gray-100 max-h-[360px]">
+          <img
+            src="/images/kantor-kelurahan-desa.png"
+            alt="Kantor Balai Desa Utan Jati"
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div className="md:col-span-6 space-y-4">
+          <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
+            Gedung Kantor Desa
+          </div>
+          <h2 className="text-2xl font-extrabold text-gray-900 leading-tight">
+            Kantor Balai Desa & Pusat Pelayanan Warga
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Gedung Kantor Balai Desa Utan Jati merupakan pusat pelayanan administrasi publik, musyawarah pembangunan warga, serta menjadi Posko Utama tempat berkordinasi seluruh kegiatan pengabdian masyarakat Tim KKN Kelompok 18 Lentera.
+          </p>
+          <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold bg-emerald-50 p-3 rounded-xl border border-emerald-100 flex-1">
+              <MapPinIcon className="w-4 h-4 shrink-0 text-emerald-600" />
+              <span>Jl. Raya Utan Jati No. 01, Kecamatan Utan</span>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/HRdXevS1LB8iy4386"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs shadow-sm transition flex items-center gap-1.5"
+            >
+              <MapPinIcon className="w-4 h-4 text-emerald-300" />
+              <span>Buka Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Sejarah Singkat Desa Utan Jati */}
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-4">
         <h2 className="text-2xl font-extrabold text-gray-900">Sejarah Desa Utan Jati</h2>

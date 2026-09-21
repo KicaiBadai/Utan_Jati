@@ -9,6 +9,20 @@ export default function GaleriPage() {
 
   const galleryItems = [
     {
+      id: 400,
+      title: 'Gedung Kantor Balai Desa Utan Jati',
+      category: 'Fasilitas Desa',
+      src: '/images/kantor-kelurahan-desa.png',
+      caption: 'Tampak depan Gedung Kantor Balai Desa Utan Jati sebagai pusat pelayanan administrasi publik dan posko kegiatan KKN.'
+    },
+    {
+      id: 300,
+      title: 'Sosialisasi AI & Cerdas Bermedia Sosial di SMA',
+      category: 'Pendidikan',
+      src: '/images/sosialisasi-ai-bermedsos-sma.jpg',
+      caption: 'Tim KKN Kelompok 18 Lentera saat menyampaikan edukasi etika penggunaan AI dan cerdas bermedia sosial kepada para siswa SMA (15 September 2026).'
+    },
+    {
       id: 200,
       title: 'Pembuatan & Penyerahan Spanduk Usaha UMKM Desa',
       category: 'UMKM',
@@ -31,7 +45,7 @@ export default function GaleriPage() {
     }
   ];
 
-  const categories = ['Semua', 'KKN 2026', 'UMKM'];
+  const categories = ['Semua', 'KKN 2026', 'Fasilitas Desa', 'Pendidikan', 'UMKM'];
 
   const filteredItems = activeCategory === 'Semua'
     ? galleryItems

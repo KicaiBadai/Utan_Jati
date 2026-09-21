@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, SparklesIcon } from '../../components/Icons';
+import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, SparklesIcon, ChevronRightIcon } from '../../components/Icons';
 
 export default function KontakPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', phone: '', topic: 'Aspirasi Warga', message: '' });
+
+  const mapUrl = "https://maps.app.goo.gl/HRdXevS1LB8iy4386";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,30 +44,31 @@ export default function KontakPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-extrabold text-white">Alamat Sekretariat</h2>
             
-            <div className="space-y-4 text-sm text-emerald-200">
+            <div className="space-y-5 text-sm text-emerald-200">
               <div className="flex items-start gap-3">
                 <MapPinIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                <div>
+                <div className="space-y-2">
                   <p className="font-bold text-white">Balai Desa & Posko Utama KKN</p>
-                  <p className="text-xs text-emerald-300 mt-0.5">
+                  <p className="text-xs text-emerald-300">
                     Jl. Raya Utan Jati No. 01, Kecamatan Utan, Jawa Tengah 57400
                   </p>
+                  <a
+                    href={mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-400 text-emerald-950 font-bold text-xs shadow-md hover:bg-emerald-300 transition"
+                  >
+                    <MapPinIcon className="w-4 h-4" />
+                    <span>Petunjuk Lokasi Google Maps</span>
+                  </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 border-t border-emerald-900 pt-4">
                 <PhoneIcon className="w-5 h-5 text-emerald-400 shrink-0" />
                 <div>
                   <p className="font-bold text-white">Telepon / WhatsApp Posko</p>
                   <p className="text-xs text-emerald-300">+62 812-3456-7890 (Humas KKN)</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <MailIcon className="w-5 h-5 text-emerald-400 shrink-0" />
-                <div>
-                  <p className="font-bold text-white">Email Resmi</p>
-                  <p className="text-xs text-emerald-300">kkn2026@desautanjati.id</p>
                 </div>
               </div>
 
@@ -167,6 +170,31 @@ export default function KontakPage() {
           )}
         </div>
 
+      </div>
+
+      {/* GOOGLE MAPS SHOWCASE BOX */}
+      <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="space-y-2 max-w-xl">
+          <div className="inline-flex items-center gap-1.5 text-emerald-800 text-xs font-bold bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
+            <MapPinIcon className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Peta Digital Balai Desa</span>
+          </div>
+          <h2 className="text-2xl font-extrabold text-gray-900">Lokasi Google Maps Balai Desa & Posko KKN</h2>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Klik tombol di samping untuk langsung membuka rute petunjuk arah menuju Balai Desa Utan Jati di aplikasi Google Maps HP atau browser Anda.
+          </p>
+        </div>
+
+        <a
+          href={mapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-sm shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.02] transition flex items-center gap-2 shrink-0"
+        >
+          <MapPinIcon className="w-5 h-5" />
+          <span>Buka di Google Maps</span>
+          <ChevronRightIcon className="w-4 h-4" />
+        </a>
       </div>
 
     </div>

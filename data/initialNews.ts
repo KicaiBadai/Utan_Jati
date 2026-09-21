@@ -43,6 +43,39 @@ export const KKN_MEMBERS: KKNMember[] = [
  */
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: 'kkn-009',
+    title: 'Sosialisasi & Edukasi di SMA: Bijak Menggunakan AI & Cerdas Bermedia Sosial',
+    slug: 'sosialisasi-bijak-penggunaan-ai-dan-cerdas-bermedsos-sma',
+    category: 'Pendidikan',
+    summary: 'Mahasiswa KKN Kelompok 18 Lentera menyelenggarakan edukasi literasi digital bagi para siswa SMA mengenai etika kecerdasan buatan (AI), cegah hoaks, serta strategi cerdas dalam bermedia sosial.',
+    content: `
+      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Pada tanggal 15 September 2026, tim mahasiswa KKN (Kelompok 18 Lentera) melaksanakan program sosialisasi literasi teknologi bertajuk <strong>"Bijak Dalam Penggunaan AI & Cerdas Bermedia Sosial"</strong> di aula sekolah SMA setempat.</p>
+      
+      <p class="mb-4">Kegiatan ini bertujuan untuk membekali generasi muda dan pelajar SMA agar memiliki kesadaran kritis serta etika dalam memanfaatkan kecanggihan teknologi Artificial Intelligence (AI) dan platform media sosial sehari-hari.</p>
+
+      <h3 class="text-xl font-bold mt-6 mb-3 text-emerald-800">Materi Edukasi & Sesi Cerdas Cermat</h3>
+      <p class="mb-4">Penyampaian materi oleh pemateri mahasiswa KKN mencakup berbagai aspek penting teknologi masa kini:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Manfaat & Risiko Artificial Intelligence (AI):</strong> Bagaimana memanfaatkan alat AI secara positif untuk mendukung tugas sekolah tanpa bergantung penuh atau melakukan kecurangan akademik (plagiarisme).</li>
+        <li><strong>Etika Bermedia Sosial & Pemfilteran Informasi:</strong> Mengenali bahaya berita bohong (hoaks), menjaga privasi data pribadi, serta menghindari tindakan cyberbullying di ruang digital.</li>
+        <li><strong>Sesi Kuis Cerdas Cermat Interaktif:</strong> Pengujian pemahaman siswa melalui tanya jawab seru dan pembagian kenang-kenangan bagi siswa aktif.</li>
+      </ul>
+
+      <blockquote class="border-l-4 border-emerald-600 pl-4 italic my-4 text-gray-700 bg-emerald-50/60 p-3 rounded-r">
+        "Penjelasan dari kakak-kakak KKN sangat membuka wawasan kami tentang cara pakai ChatGPT dan AI dengan benar untuk belajar, serta diingatkan agar tidak gampang percaya hoaks di TikTok dan Instagram," ujar salah satu siswa peserta sosialisasi.
+      </blockquote>
+
+      <p class="mb-4">Sosialisasi diakhiri dengan penyerahan sertifikat apresiasi kepada pihak sekolah dan foto bersama seluruh siswa serta mahasiswa KKN.</p>
+    `,
+    date: '15 September 2026',
+    author: 'Kelompok 18 KKN Lentera',
+    authorRole: 'Divisi Pendidikan & Teknologi',
+    image: '/images/sosialisasi-ai-bermedsos-sma.jpg',
+    readTime: '4 min baca',
+    tags: ['KKN 2026', 'Edukasi SMA', 'Literasi AI', 'Cerdas Bermedsos', 'Pendidikan Teknologi'],
+    location: 'Ruang Kelas SMA Desa'
+  },
+  {
     id: 'kkn-008',
     title: 'Program Pemberdayaan UMKM: Pendataan & Pembuatan Spanduk Usaha Bagi Pedagang Desa',
     slug: 'pembuatan-spanduk-pemberdayaan-umkm-desa',

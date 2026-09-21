@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { MapPinIcon, PhoneIcon, MailIcon, TreeIcon } from './Icons';
 
 export default function Footer() {
+  const mapUrl = "https://maps.app.goo.gl/HRdXevS1LB8iy4386";
+
   return (
     <footer className="bg-emerald-950 text-emerald-200/90 border-t border-emerald-900 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,24 +77,31 @@ export default function Footer() {
           </div>
 
           {/* Col 4: Contact & Posko Info */}
-          <div>
-            <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-4 text-emerald-300">
+          <div className="space-y-4">
+            <h4 className="text-white font-bold text-sm tracking-wider uppercase text-emerald-300">
               Sekretariat & Posko KKN
             </h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
                 <MapPinIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                <span className="text-emerald-200/90 text-xs leading-relaxed">
-                  Balai Desa Utan Jati, Jl. Raya Utan Jati No. 01, Kecamatan Utan, Jawa Tengah
-                </span>
+                <div className="space-y-2">
+                  <span className="text-emerald-200/90 text-xs leading-relaxed block">
+                    Balai Desa Utan Jati, Jl. Raya Utan Jati No. 01, Kecamatan Utan
+                  </span>
+                  <a
+                    href={mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-950 bg-emerald-400 hover:bg-emerald-300 px-3 py-1.5 rounded-lg transition-colors shadow-sm"
+                  >
+                    <MapPinIcon className="w-3.5 h-3.5" />
+                    <span>Buka Lokasi Google Maps</span>
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 pt-1">
                 <PhoneIcon className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs text-emerald-200/90">+62 812-3456-7890 (Posko KKN)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <MailIcon className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span className="text-xs text-emerald-200/90">kkn2026@desautanjati.id</span>
               </div>
             </div>
           </div>

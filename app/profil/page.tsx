@@ -1,5 +1,5 @@
 import React from 'react';
-import { VILLAGE_STATS } from '../../data/initialNews';
+import { VILLAGE_STATS, KKN_MEMBERS } from '../../data/initialNews';
 import { SparklesIcon, TreeIcon, MapPinIcon, UserIcon } from '../../components/Icons';
 
 export const metadata = {
@@ -8,15 +8,11 @@ export const metadata = {
 };
 
 export default function ProfilPage() {
-  const structureList = [
-    { name: 'H. Sulaeman, S.Sos.', role: 'Kepala Desa', group: 'Pemdes' },
-    { name: 'Bambang Sukojo, S.E.', role: 'Sekretaris Desa', group: 'Pemdes' },
-    { name: 'Sri Rahayu', role: 'Kaur Keuangan & Perencanaan', group: 'Pemdes' },
-    { name: 'Kuswanto', role: 'Kasi Pemerintahan & Kesejahteraan', group: 'Pemdes' },
-    { name: 'Muhammad Rizky', role: 'Ketua Tim KKN 2026', group: 'KKN' },
-    { name: 'Ahmad Faisal', role: 'Wakil Ketua & Penanggungjawab UMKM', group: 'KKN' },
-    { name: 'Siti Nurhaliza', role: 'Koordinator Kesehatan & Stunting', group: 'KKN' },
-    { name: 'Rian Perdana', role: 'Koordinator Infrastruktur & Media', group: 'KKN' },
+  const pemdesList = [
+    { name: 'H. Sulaeman, S.Sos.', role: 'Kepala Desa' },
+    { name: 'Bambang Sukojo, S.E.', role: 'Sekretaris Desa' },
+    { name: 'Sri Rahayu', role: 'Kaur Keuangan & Perencanaan' },
+    { name: 'Kuswanto', role: 'Kasi Pemerintahan & Kesejahteraan' },
   ];
 
   return (
@@ -120,27 +116,71 @@ export default function ProfilPage() {
             <p className="text-[10px] text-emerald-400">Hektar</p>
           </div>
           <div className="bg-emerald-900/60 p-4 rounded-2xl border border-emerald-800">
-            <p className="text-xs text-emerald-300">Pembagian Dusun</p>
-            <p className="text-2xl font-black text-white mt-1">{VILLAGE_STATS.hamlets}</p>
-            <p className="text-[10px] text-emerald-400">Wilayah Administrative</p>
+            <p className="text-xs text-emerald-300">Tim Mahasiswa KKN</p>
+            <p className="text-2xl font-black text-emerald-300 mt-1">{VILLAGE_STATS.kknStudents}</p>
+            <p className="text-[10px] text-emerald-400">Kelompok 18 Lentera</p>
           </div>
         </div>
       </div>
 
-      {/* Struktur Pengurus Pemdes & Tim KKN */}
+      {/* STRUKTUR TIM KKN KELOMPOK 18 LENTERA */}
+      <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-6">
+          <div>
+            <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+              Anggota Tim Pengabdian
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+              Tim Mahasiswa KKN Kelompok 18 Lentera
+            </h2>
+            <p className="text-xs text-gray-500 mt-1">Daftar 12 mahasiswa pengabdi di Desa Utan Jati.</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {KKN_MEMBERS.map((member, idx) => {
+            const isLeadership = member.role.includes('Ketua') || member.role.includes('Sekretaris') || member.role.includes('Bendahara');
+            return (
+              <div
+                key={idx}
+                className={`p-5 rounded-2xl border transition-all ${
+                  isLeadership
+                    ? 'bg-gradient-to-br from-emerald-50 to-teal-50/50 border-emerald-200 shadow-sm'
+                    : 'bg-slate-50/80 border-gray-100 hover:border-emerald-100'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`w-11 h-11 rounded-xl font-bold flex items-center justify-center text-sm shadow-sm ${
+                    isLeadership ? 'bg-emerald-800 text-white' : 'bg-teal-700 text-white'
+                  }`}>
+                    {member.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-sm leading-snug">{member.name}</h3>
+                    <p className="text-xs font-semibold text-emerald-700 mt-0.5">{member.role}</p>
+                    <span className="inline-block text-[10px] font-medium text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200 mt-1">
+                      Kelas: {member.classGroup}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Perangkat Desa Utan Jati */}
       <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
         <div>
-          <h2 className="text-2xl font-extrabold text-gray-900">Struktur Pemerintahan & Tim KKN</h2>
-          <p className="text-xs text-gray-500 mt-1">Daftar perangkat Desa Utan Jati & penanggungjawab program KKN Tematik 2026.</p>
+          <h2 className="text-2xl font-extrabold text-gray-900">Perangkat Pemerintah Desa</h2>
+          <p className="text-xs text-gray-500 mt-1">Jajaran pemerintahan Desa Utan Jati.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {structureList.map((person, idx) => (
+          {pemdesList.map((person, idx) => (
             <div key={idx} className="p-4 rounded-2xl border border-gray-100 bg-slate-50/80 flex items-center gap-3">
-              <div className={`w-10 h-10 rounded-xl font-bold flex items-center justify-center text-xs text-white ${
-                person.group === 'Pemdes' ? 'bg-emerald-800' : 'bg-teal-700'
-              }`}>
-                {person.group}
+              <div className="w-10 h-10 rounded-xl bg-emerald-900 text-white font-bold flex items-center justify-center text-xs">
+                Desa
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-xs">{person.name}</p>

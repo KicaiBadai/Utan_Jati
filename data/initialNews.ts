@@ -14,6 +14,27 @@ export interface NewsItem {
   location?: string;
 }
 
+export interface KKNMember {
+  name: string;
+  role: string;
+  classGroup: string;
+}
+
+export const KKN_MEMBERS: KKNMember[] = [
+  { name: 'Dandi Taufiqurrahman', role: 'Ketua Tim KKN', classGroup: 'TI SE1' },
+  { name: 'Muhammad Ilham Maulana', role: 'Wakil Ketua Tim KKN', classGroup: 'TI 23 SH SE' },
+  { name: 'Anisa Rahma Susanti', role: 'Sekretaris', classGroup: 'BD-MBD2' },
+  { name: 'Riska Intan Wulandari', role: 'Bendahara', classGroup: 'BD-MBD2' },
+  { name: 'Aditya Maula Wiratama', role: 'Anggota Tim', classGroup: 'TI SE1' },
+  { name: 'Dilla Almanda', role: 'Anggota Tim', classGroup: 'BD-MBD2' },
+  { name: 'Alika Cesya N.M', role: 'Anggota Tim', classGroup: 'BD2-23P' },
+  { name: 'Rian Maulana', role: 'Anggota Tim', classGroup: 'TI23SEM' },
+  { name: 'Rayhan Faras Ramadhani', role: 'Anggota Tim', classGroup: 'TI23SEM' },
+  { name: 'Haikal Falah', role: 'Anggota Tim', classGroup: 'TI 23 SH SE' },
+  { name: 'Bagus Ferdiansyah', role: 'Anggota Tim', classGroup: 'TI 23 M SE' },
+  { name: 'Althaf Erol Dipa Maezadanar', role: 'Anggota Tim', classGroup: 'TI 23 P CN' },
+];
+
 /**
  * DATABANK KEGIATAN KKN & BERITA DESA UTAN JATI
  * 
@@ -21,6 +42,39 @@ export interface NewsItem {
  * ke dalam list `INITIAL_NEWS` di bawah ini!
  */
 export const INITIAL_NEWS: NewsItem[] = [
+  {
+    id: 'kkn-008',
+    title: 'Program Pemberdayaan UMKM: Pendataan & Pembuatan Spanduk Usaha Bagi Pedagang Desa',
+    slug: 'pembuatan-spanduk-pemberdayaan-umkm-desa',
+    category: 'UMKM & Ekonomi',
+    summary: 'Mahasiswa KKN melaksanakan pendataan usaha lokal serta mendesain dan menyerahkan spanduk promosi usaha gratis untuk meningkatkan daya tarik dan identitas visual UMKM sekitar desa.',
+    content: `
+      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Sebagai bentuk dukungan terhadap pertumbuhan ekonomi warga, mahasiswa KKN (Kelompok 18 Lentera) memfasilitasi program pembenahan identitas visual usaha kecil melalui pendataan dan pembuatan spanduk promosi UMKM pada tanggal 7 September 2026.</p>
+      
+      <p class="mb-4">Tim mahasiswa mendatangi langsung beberapa titik warung dan usaha kuliner warga sekitar, termasuk warung olahan minuman es kelapa kopyor Ibu Halimah, untuk melakukan pengukuran lokasi serta pendataan daftar menu dan kontak usaha.</p>
+
+      <h3 class="text-xl font-bold mt-6 mb-3 text-emerald-800">Cakupan Program Branding UMKM</h3>
+      <p class="mb-4">Program pembuatan spanduk usaha ini bertujuan untuk meningkatkan daya pikat dan kemudahan titik temu pelanggan, meliputi:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Desain Spanduk Informatif & Menarik:</strong> Merancang tata letak nama kedai, daftar varian produk utama, serta promo menarik agar tampak bersih dan jelas terbaca dari tepi jalan.</li>
+        <li><strong>Pemasangan Struktur Rangka Spanduk:</strong> Membantu penataan dan pergantian spanduk lama dengan spanduk baru yang lebih kuat tahan cuaca.</li>
+        <li><strong>Edukasi Pemasaran & Pelayanan Pelanggan:</strong> Memberikan masukan mengenai kebersihan tempat dan kemasan ramah lingkungan bagi pengunjung.</li>
+      </ul>
+
+      <blockquote class="border-l-4 border-emerald-600 pl-4 italic my-4 text-gray-700 bg-emerald-50/60 p-3 rounded-r">
+        "Senang sekali warung kami dibantu dibuatkan spanduk baru oleh anak-anak mahasiswa KKN. Tampilannya jadi lebih rapi, segar, dan pembeli dari luar desa jadi gampang menemukan tempat usaha kami," tutur pemilik usaha warung.
+      </blockquote>
+
+      <p class="mb-4">Melalui inisiatif ini, diharapkan pelaku UMKM lokal Desa Utan Jati semakin percaya diri dan mampu meningkatkan volume penjualan usaha mereka secara berkelanjutan.</p>
+    `,
+    date: '7 September 2026',
+    author: 'Kelompok 18 KKN Lentera',
+    authorRole: 'Divisi Ekonomi & UMKM',
+    image: '/images/spanduk-umkm-sekitar.jpg',
+    readTime: '3 min baca',
+    tags: ['KKN 2026', 'UMKM Desa', 'Branding Usaha', 'Spanduk Promosi', 'Pemberdayaan Ekonomi'],
+    location: 'Lapak & Warung UMKM Desa'
+  },
   {
     id: 'kkn-007',
     title: 'Gotong Royong Tim KKN Membantu Persiapan Acara Peringatan Maulid Nabi Muhammad SAW',
@@ -95,6 +149,6 @@ export const VILLAGE_STATS = {
   households: '860',
   areaSize: '450 Ha',
   hamlets: '4 Dusun',
-  kknStudents: '15 Mahasiswa',
+  kknStudents: '12 Mahasiswa',
   umkmCount: '32 Usaha'
 };

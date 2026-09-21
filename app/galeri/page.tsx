@@ -9,6 +9,13 @@ export default function GaleriPage() {
 
   const galleryItems = [
     {
+      id: 200,
+      title: 'Pembuatan & Penyerahan Spanduk Usaha UMKM Desa',
+      category: 'UMKM',
+      src: '/images/spanduk-umkm-sekitar.jpg',
+      caption: 'Mahasiswa KKN Kelompok 18 Lentera saat berkunjung dan membantu pendataan branding warung usaha warga desa (7 September 2026).'
+    },
+    {
       id: 1,
       title: 'Gotong Royong Persiapan Konsumsi Maulid Nabi',
       category: 'KKN 2026',
@@ -24,7 +31,7 @@ export default function GaleriPage() {
     }
   ];
 
-  const categories = ['Semua', 'KKN 2026'];
+  const categories = ['Semua', 'KKN 2026', 'UMKM'];
 
   const filteredItems = activeCategory === 'Semua'
     ? galleryItems

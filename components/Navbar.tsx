@@ -31,14 +31,14 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <img
               src="/images/logo-desa.png"
-              alt="Logo Desa Utan Jati"
+              alt="Logo Kedaung Barat"
               className="h-12 w-auto object-contain drop-shadow group-hover:scale-105 transition-transform duration-300"
             />
             <div>
 
               <div className="flex items-center gap-2">
                 <span className="font-bold text-lg text-emerald-50 tracking-tight group-hover:text-emerald-300 transition-colors">
-                  DESA UTAN JATI
+                  KEDAUNG BARAT
                 </span>
 
               </div>

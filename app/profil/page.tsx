@@ -3,8 +3,8 @@ import { VILLAGE_STATS, KKN_MEMBERS } from '../../data/initialNews';
 import { SparklesIcon, TreeIcon, MapPinIcon, UserIcon } from '../../components/Icons';
 
 export const metadata = {
-  title: "Profil Desa Kedaung Barat - Sejarah, Geografis, Demografi & Sarana Prasarana",
-  description: "Informasi resmi mengenai sejarah berdiri, silsilah kepemimpinan, letak geografis, demografi penduduk, serta sarana prasarana Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang.",
+  title: "Profil Kedaung Barat - Sejarah, Geografis, Demografi & Sarana Prasarana",
+  description: "Informasi resmi mengenai sejarah berdiri, silsilah kepemimpinan, letak geografis, demografi penduduk, serta sarana prasarana Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang.",
 };
 
 export default function ProfilPage() {
@@ -24,7 +24,7 @@ export default function ProfilPage() {
     { no: 6, name: 'Sainin Wijaya Karma', period: '2006 – 2012', note: 'Menjabat 1 periode' },
     { no: 7, name: 'Suhendri Sukri', period: '2013 – 2017', note: 'Menjabat 1 periode' },
     { no: 8, name: 'PJ. H. Ahmad Frengky, S.H.', period: '2017 – 2019', note: 'Penjabat Kepala Desa (~2 tahun)' },
-    { no: 9, name: 'Sarnin Ayub (Terpilih)', period: '01 Des 2019', note: 'Mantan Sekretaris Desa Kedaung Barat' },
+    { no: 9, name: 'Sarnin Ayub (Terpilih)', period: '01 Des 2019', note: 'Mantan Sekretaris Kedaung Barat' },
     { no: 10, name: 'Bapak Sarnin Ayub', period: '2019 – 2025', note: 'Kepala Desa Aktif Periode 2019-2025' },
   ];
 
@@ -70,17 +70,17 @@ export default function ProfilPage() {
           <div className="flex items-center gap-4 flex-wrap">
             <img
               src="/images/logo-desa.png"
-              alt="Logo Resmi Kabupaten Tangerang - Desa Kedaung Barat"
+              alt="Logo Resmi Kabupaten Tangerang - Kedaung Barat"
               className="h-20 w-auto object-contain drop-shadow-xl"
             />
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 text-emerald-200 text-xs font-bold border border-emerald-700">
               <TreeIcon className="w-4 h-4 text-emerald-300" />
-              <span>Profil Resmi Desa Kedaung Barat</span>
+              <span>Profil Resmi Kedaung Barat</span>
             </div>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Desa Kedaung Barat
+            Kedaung Barat
           </h1>
           <p className="text-emerald-100/90 text-base sm:text-lg leading-relaxed max-w-3xl">
             Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten. Desa berdaya yang menjunjung tinggi toleransi umat beragama, keasrian lingkungan, serta pelayanan masyarakat digital.
@@ -88,32 +88,32 @@ export default function ProfilPage() {
         </div>
       </div>
 
-      {/* A. SEJARAH DESA KEDAUNG BARAT */}
+      {/* A. SEJARAH KEDAUNG BARAT */}
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
         <div className="border-b border-gray-100 pb-4">
           <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
             Bagian A
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
-            Sejarah Desa Kedaung Barat
+            Sejarah Kedaung Barat
           </h2>
         </div>
 
         <div className="prose prose-emerald max-w-none text-gray-700 text-sm leading-relaxed space-y-4">
           <p>
-            Desa Kedaung Barat merupakan bagian dari wilayah yang terletak di <strong>Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten</strong>. Mempunyai total luas wilayah sebesar <strong>225 ha</strong>, yang meliputi daratan seluas 110 ha dan persawahan seluas 115 ha.
+            Kedaung Barat merupakan bagian dari wilayah yang terletak di <strong>Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten</strong>. Mempunyai total luas wilayah sebesar <strong>225 ha</strong>, yang meliputi daratan seluas 110 ha dan persawahan seluas 115 ha.
           </p>
           <p>
-            Nama Desa Kedaung Barat ini berasal dari nama pohon <strong>“Kedaung”</strong> yang dahulu tumbuh dalam jumlah banyak di wilayah tersebut, sehingga desa ini dikenal dengan sebutan Kedaung dengan tambahan kata <strong>“Barat”</strong> yang mengartikan bahwa letak desa ini berada di sebelah Barat atau Kulon dari Desa Kedaung Baru. Dahulu Kedaung terbagi menjadi dua bagian yaitu Kedaung Barat dan Kedaung Wetan.
+            Nama Kedaung Barat ini berasal dari nama pohon <strong>“Kedaung”</strong> yang dahulu tumbuh dalam jumlah banyak di wilayah tersebut, sehingga desa ini dikenal dengan sebutan Kedaung dengan tambahan kata <strong>“Barat”</strong> yang mengartikan bahwa letak desa ini berada di sebelah Barat atau Kulon dari Desa Kedaung Baru. Dahulu Kedaung terbagi menjadi dua bagian yaitu Kedaung Barat dan Kedaung Wetan.
           </p>
           <p>
-            Desa Kedaung Barat dipimpin pertama kalinya oleh <strong>Van So She</strong> berkebangsaan Belanda pada zaman Kolonial Belanda sebelum Indonesia merdeka. Kemudian pada tahun 1946 putra daerah memimpin Desa Kedaung Barat untuk pertama kalinya.
+            Kedaung Barat dipimpin pertama kalinya oleh <strong>Van So She</strong> berkebangsaan Belanda pada zaman Kolonial Belanda sebelum Indonesia merdeka. Kemudian pada tahun 1946 putra daerah memimpin Kedaung Barat untuk pertama kalinya.
           </p>
         </div>
 
         {/* Tabel Riwayat Kepala Desa */}
         <div className="pt-4 space-y-3">
-          <h3 className="text-base font-bold text-gray-900">Riwayat Kepemimpinan Kepala Desa Kedaung Barat (1946 – Sekarang)</h3>
+          <h3 className="text-base font-bold text-gray-900">Riwayat Kepemimpinan Kepala Desa (1946 – Sekarang)</h3>
           <div className="overflow-x-auto rounded-2xl border border-emerald-100">
             <table className="w-full text-left text-xs">
               <thead className="bg-emerald-900 text-white uppercase text-[11px] font-bold">
@@ -139,7 +139,7 @@ export default function ProfilPage() {
         </div>
       </div>
 
-      {/* B. LETAK GEOGRAFIS DESA KEDAUNG BARAT */}
+      {/* B. LETAK GEOGRAFIS KEDAUNG BARAT */}
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
         <div className="border-b border-gray-100 pb-4">
           <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
@@ -151,7 +151,7 @@ export default function ProfilPage() {
         </div>
 
         <p className="text-gray-700 text-sm leading-relaxed">
-          Secara topografi, Desa Kedaung Barat memiliki temperatur <strong>29°C – 34°C</strong> sebagai dataran rendah. Desa Kedaung Barat memiliki luas wilayah desa sebesar <strong>225 Ha</strong> (Daratan 110 Ha & Persawahan 115 Ha).
+          Secara topografi, Kedaung Barat memiliki temperatur <strong>29°C – 34°C</strong> sebagai dataran rendah. Kedaung Barat memiliki luas wilayah sebesar <strong>225 Ha</strong> (Daratan 110 Ha & Persawahan 115 Ha).
         </p>
 
         {/* Tampilan Gambar Peta Satelit Google Maps Kedaung Barat */}
@@ -159,16 +159,16 @@ export default function ProfilPage() {
           <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-100 shadow-md group bg-gray-900">
             <img
               src="/images/peta-geografis-kedaung-barat.jpg"
-              alt="Gambar 1.1 Peta Letak Geografis Desa Kedaung Barat (Satelit Google Maps)"
+              alt="Gambar 1.1 Peta Letak Geografis Kedaung Barat (Satelit Google Maps)"
               className="w-full h-auto object-cover max-h-[550px] w-full transition-transform duration-500 group-hover:scale-[1.01]"
             />
             <div className="absolute top-4 left-4 bg-emerald-950/80 backdrop-blur-md text-white text-xs font-semibold px-3.5 py-2 rounded-xl flex items-center gap-2 border border-emerald-800 shadow-lg">
               <MapPinIcon className="w-4 h-4 text-emerald-400" />
-              <span>Gambar 1.1 Peta Satelit Google Maps Wilayah Desa Kedaung Barat</span>
+              <span>Gambar 1.1 Peta Satelit Google Maps Wilayah Kedaung Barat</span>
             </div>
           </div>
           <p className="text-xs text-gray-500 italic text-center">
-            Peta Citra Satelit Letak Geografis & Garis Batas Wilayah Desa Kedaung Barat, Sepatan Timur, Tangerang
+            Peta Citra Satelit Letak Geografis & Garis Batas Wilayah Kedaung Barat, Sepatan Timur, Tangerang
           </p>
         </div>
 
@@ -179,7 +179,7 @@ export default function ProfilPage() {
           <div className="bg-emerald-50/80 p-6 rounded-2xl border border-emerald-100 space-y-3">
             <h3 className="font-bold text-emerald-950 text-base flex items-center gap-2">
               <MapPinIcon className="w-5 h-5 text-emerald-700" />
-              <span>Batas-Batas Wilayah Desa:</span>
+              <span>Batas-Batas Wilayah:</span>
             </h3>
             <ul className="space-y-2 text-xs text-gray-700">
               <li className="flex justify-between bg-white p-2.5 rounded-xl border border-emerald-100">
@@ -205,7 +205,7 @@ export default function ProfilPage() {
           <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 space-y-4">
             <h3 className="font-bold text-gray-900 text-base">Jarak Ke Pusat Pemerintahan & Administrasi</h3>
             <p className="text-xs text-gray-600">
-              Secara administrative, Desa Kedaung Barat terdiri dari <strong>27 RT</strong>, <strong>5 RW</strong>, serta terdapat <strong>4 Kejaroan</strong>.
+              Secara administrative, Kedaung Barat terdiri dari <strong>27 RT</strong>, <strong>5 RW</strong>, serta terdapat <strong>4 Kejaroan</strong>.
             </p>
             <div className="space-y-2 pt-1">
               <div className="flex justify-between text-xs bg-white p-2.5 rounded-xl border border-gray-200">
@@ -233,10 +233,10 @@ export default function ProfilPage() {
             Bagian C
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-            Struktur Penduduk Desa Kedaung Barat
+            Struktur Penduduk Kedaung Barat
           </h2>
           <p className="text-xs text-emerald-200 mt-1">
-            Data Demografi Desa Kedaung Barat terdata sampai dengan bulan Desember tahun 2019.
+            Data Demografi Kedaung Barat terdata sampai dengan bulan Desember tahun 2019.
           </p>
         </div>
 
@@ -266,10 +266,10 @@ export default function ProfilPage() {
             Bagian D
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
-            Sarana Dan Prasarana Umum Desa
+            Sarana Dan Prasarana Umum
           </h2>
           <p className="text-xs text-gray-500 mt-1">
-            Rincian fasilitas dan sarana prasarana umum Desa Kedaung Barat.
+            Rincian fasilitas dan sarana prasarana umum Kedaung Barat.
           </p>
         </div>
 
@@ -297,7 +297,7 @@ export default function ProfilPage() {
               <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">🕌</span>
               <h3>Sarana Peribadatan (Toleransi)</h3>
             </div>
-            <p className="text-[11px] text-gray-500 italic">Desa menjunjung tinggi sikap toleransi antar umat beragama.</p>
+            <p className="text-[11px] text-gray-500 italic">Menjunjung tinggi sikap toleransi antar umat beragama.</p>
             <ul className="space-y-1.5 text-xs">
               {saranaPeribadatan.map((item, i) => (
                 <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
@@ -364,19 +364,19 @@ export default function ProfilPage() {
         <div className="md:col-span-6 rounded-2xl overflow-hidden shadow-md border border-gray-100 max-h-[360px]">
           <img
             src="/images/kantor-kelurahan-desa.png"
-            alt="Kantor Balai Desa Kedaung Barat"
+            alt="Kantor Balai Kedaung Barat"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         </div>
         <div className="md:col-span-6 space-y-4">
           <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">
-            Gedung Kantor Desa
+            Gedung Kantor Balai
           </div>
           <h2 className="text-2xl font-extrabold text-gray-900 leading-tight">
-            Kantor Balai Desa & Pusat Pelayanan Warga
+            Kantor Balai & Pusat Pelayanan Warga
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Gedung Kantor Balai Desa Kedaung Barat merupakan pusat pelayanan administrasi publik serta tempat berlangsungnya berbagai kegiatan musyawarah pembangunan warga.
+            Gedung Kantor Balai Kedaung Barat merupakan pusat pelayanan administrasi publik serta tempat berlangsungnya berbagai kegiatan musyawarah pembangunan warga.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold bg-emerald-50 p-3 rounded-xl border border-emerald-100 flex-1">
@@ -406,7 +406,7 @@ export default function ProfilPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
               Tim Mahasiswa KKN Kelompok 18 Lentera
             </h2>
-            <p className="text-xs text-gray-500 mt-1">Daftar 12 mahasiswa pengabdi di Desa Kedaung Barat.</p>
+            <p className="text-xs text-gray-500 mt-1">Daftar 12 mahasiswa pengabdi di Kedaung Barat.</p>
           </div>
         </div>
 
@@ -442,11 +442,11 @@ export default function ProfilPage() {
         </div>
       </div>
 
-      {/* Perangkat Desa Kedaung Barat */}
+      {/* Perangkat Kedaung Barat */}
       <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
         <div>
-          <h2 className="text-2xl font-extrabold text-gray-900">Perangkat Pemerintah Desa</h2>
-          <p className="text-xs text-gray-500 mt-1">Jajaran pemerintahan Desa Kedaung Barat.</p>
+          <h2 className="text-2xl font-extrabold text-gray-900">Perangkat Pemerintahan</h2>
+          <p className="text-xs text-gray-500 mt-1">Jajaran pemerintahan Kedaung Barat.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

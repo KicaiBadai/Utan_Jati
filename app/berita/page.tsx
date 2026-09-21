@@ -46,7 +46,7 @@ export default function BeritaPage() {
             Portal Berita & Kegiatan KKN
           </h1>
           <p className="text-emerald-100/80 text-sm leading-relaxed">
-            Temukan seluruh catatan kegiatan, artikel pengabdian mahasiswa KKN 2026, serta pengumuman resmi Desa Utan Jati secara lengkap.
+            Temukan seluruh catatan kegiatan, artikel pengabdian mahasiswa KKN 2026, serta pengumuman resmi Kedaung Barat secara lengkap.
           </p>
         </div>
       </div>

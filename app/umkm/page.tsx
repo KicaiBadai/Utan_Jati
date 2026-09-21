@@ -32,10 +32,10 @@ export default function UMKMPage() {
             <span>Pemberdayaan Ekonomi Desa</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Katalog UMKM & Produk Lokal Desa Utan Jati
+            Katalog UMKM & Produk Lokal Kedaung Barat
           </h1>
           <p className="text-emerald-100/80 text-sm leading-relaxed">
-            Dukung dan jelajahi berbagai produk kuliner khas desa, sembako harian, konter pulsa digital, serta warung usaha masyarakat Desa Utan Jati. Klik pada kartu usaha untuk melihat deskripsi lengkap.
+            Dukung dan jelajahi berbagai produk kuliner khas desa, sembako harian, konter pulsa digital, serta warung usaha masyarakat Kedaung Barat. Klik pada kartu usaha untuk melihat deskripsi lengkap.
           </p>
 
         </div>

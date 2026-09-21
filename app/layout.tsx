@@ -10,9 +10,9 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Website Resmi Desa Utan Jati & Portal Berita KKN",
-  description: "Portal resmi profil Desa Utan Jati, Kecamatan Utan. Menyajikan informasi demografi, potensi lokal, serta dokumentasi kegiatan KKN Tematik 2026.",
-  keywords: ["Desa Utan Jati", "Profil Desa", "Berita Desa", "Kegiatan KKN", "UMKM Jati", "Posyandu Desa"],
+  title: "Website Resmi Kedaung Barat & Portal Berita KKN",
+  description: "Portal resmi profil Kedaung Barat, Sepatan Timur. Menyajikan informasi demografi, potensi lokal, serta dokumentasi kegiatan KKN Tematik 2026.",
+  keywords: ["Kedaung Barat", "Profil Desa", "Berita Desa", "Kegiatan KKN", "UMKM Kedaung Barat", "Posyandu Desa"],
 };
 
 export default function RootLayout({

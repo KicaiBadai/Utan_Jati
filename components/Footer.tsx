@@ -18,11 +18,11 @@ export default function Footer() {
                 alt="Logo Desa"
                 className="h-11 w-auto object-contain p-0.5 bg-white/10 rounded-lg"
               />
-              <span className="font-bold text-xl text-white tracking-tight">DESA KEDAUNG BARAT</span>
+              <span className="font-bold text-xl text-white tracking-tight">KEDAUNG BARAT</span>
             </div>
 
             <p className="text-xs leading-relaxed text-emerald-300/80">
-              Portal resmi informasi profil Desa Kedaung Barat, Sepatan Timur, Kabupaten Tangerang, Banten.
+              Portal resmi informasi profil Kedaung Barat, Sepatan Timur, Kabupaten Tangerang, Banten.
             </p>
             <div className="flex items-center gap-2 text-xs text-emerald-400 bg-emerald-900/50 p-2.5 rounded-lg border border-emerald-800">
               <TreeIcon className="w-4 h-4 shrink-0 text-emerald-400" />
@@ -64,7 +64,7 @@ export default function Footer() {
                 <MapPinIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <div className="space-y-2">
                   <span className="text-emerald-200/90 text-xs leading-relaxed block">
-                    Kantor Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang, Banten
+                    Kantor Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang, Banten
                   </span>
                   <a
                     href={mapUrl}
@@ -84,7 +84,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-emerald-400/70 gap-4">
-          <p>© 2026 Pemerintah Desa Kedaung Barat. All rights reserved.</p>
+          <p>© 2026 Pemerintah Kedaung Barat. All rights reserved.</p>
         </div>
 
       </div>

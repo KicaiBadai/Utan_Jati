@@ -2,8 +2,8 @@ import React from 'react';
 import { MapPinIcon, ClockIcon, ChevronRightIcon } from '../../components/Icons';
 
 export const metadata = {
-  title: "Kontak & Lokasi Kantor Desa Kedaung Barat",
-  description: "Alamat resmi kantor balai Desa Kedaung Barat, Sepatan Timur, Kabupaten Tangerang, Banten serta petunjuk rute Google Maps.",
+  title: "Kontak & Lokasi Kantor Kedaung Barat",
+  description: "Alamat resmi kantor balai Kedaung Barat, Sepatan Timur, Kabupaten Tangerang, Banten serta petunjuk rute Google Maps.",
 };
 
 export default function KontakPage() {
@@ -17,13 +17,13 @@ export default function KontakPage() {
         <div className="max-w-2xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 text-emerald-200 text-xs font-bold border border-emerald-700">
             <MapPinIcon className="w-4 h-4 text-emerald-300" />
-            <span>Pusat Informasi & Lokasi Desa</span>
+            <span>Pusat Informasi & Lokasi</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Kantor Balai Desa Kedaung Barat
+            Kantor Balai Kedaung Barat
           </h1>
           <p className="text-emerald-100/80 text-sm leading-relaxed">
-            Informasi alamat resmi Balai Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten.
+            Informasi alamat resmi Balai Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten.
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function KontakPage() {
                   <MapPinIcon className="w-6 h-6 text-emerald-400" />
                 </div>
                 <div className="space-y-2">
-                  <p className="font-bold text-white text-base">Kantor Kepala Desa Kedaung Barat</p>
+                  <p className="font-bold text-white text-base">Kantor Kepala Kedaung Barat</p>
                   <p className="text-xs text-emerald-300/90 leading-relaxed">
                     Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten (Kode Pos: 15510)
                   </p>
@@ -64,7 +64,7 @@ export default function KontakPage() {
                   <ClockIcon className="w-6 h-6 text-emerald-400" />
                 </div>
                 <div className="space-y-1">
-                  <p className="font-bold text-white text-base">Jam Operasional Kantor Desa</p>
+                  <p className="font-bold text-white text-base">Jam Operasional Kantor</p>
                   <p className="text-xs text-emerald-300 font-semibold">Senin - Jumat: 08.00 - 15.30 WIB</p>
                   <p className="text-[11px] text-emerald-400/80">Sabtu & Minggu / Hari Libur Nasional: Tutup</p>
                 </div>
@@ -73,9 +73,9 @@ export default function KontakPage() {
           </div>
 
           <div className="p-4 rounded-2xl bg-emerald-900/50 border border-emerald-800 text-xs text-emerald-300 space-y-1">
-            <p className="font-bold text-white">Pelayanan Masyarakat Desa</p>
+            <p className="font-bold text-white">Pelayanan Masyarakat</p>
             <p className="text-[11px] text-emerald-300/80 leading-relaxed">
-              Pelayanan administrasi kependudukan dan surat-menyurat warga dilayani langsung di Balai Desa Kedaung Barat pada jam kerja.
+              Pelayanan administrasi kependudukan dan surat-menyurat warga dilayani langsung di Balai Kedaung Barat pada jam kerja.
             </p>
           </div>
         </div>
@@ -89,17 +89,17 @@ export default function KontakPage() {
             </div>
             <h2 className="text-2xl font-extrabold text-gray-900">Petunjuk Arah Rute Google Maps</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Anda dapat mengklik tombol petunjuk arah di bawah ini untuk menavigasi rute perjalanan secara akurat menuju Kantor Balai Desa Kedaung Barat melalui Google Maps.
+              Anda dapat mengklik tombol petunjuk arah di bawah ini untuk menavigasi rute perjalanan secara akurat menuju Kantor Balai Kedaung Barat melalui Google Maps.
             </p>
 
             <div className="relative overflow-hidden rounded-2xl border border-emerald-100 shadow-sm bg-gray-900 mt-4">
               <img
                 src="/images/peta-geografis-kedaung-barat.jpg"
-                alt="Peta Satelit Desa Kedaung Barat"
+                alt="Peta Satelit Kedaung Barat"
                 className="w-full h-48 object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
-                <span className="text-white text-xs font-semibold">Wilayah Desa Kedaung Barat, Sepatan Timur</span>
+                <span className="text-white text-xs font-semibold">Wilayah Kedaung Barat, Sepatan Timur</span>
               </div>
             </div>
           </div>

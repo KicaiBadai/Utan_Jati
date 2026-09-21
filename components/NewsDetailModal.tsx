@@ -35,7 +35,7 @@ export default function NewsDetailModal({ news, onClose }: NewsDetailModalProps)
             <span className="bg-emerald-500 text-emerald-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider">
               {news.category}
             </span>
-            <span className="text-xs text-emerald-300">Desa Utan Jati</span>
+            <span className="text-xs text-emerald-300">Kedaung Barat</span>
           </div>
 
           <div className="flex items-center gap-2">
@@ -139,7 +139,7 @@ export default function NewsDetailModal({ news, onClose }: NewsDetailModalProps)
         {/* Footer actions */}
         <div className="bg-gray-50 px-6 py-4 border-t border-gray-100 flex items-center justify-between">
           <p className="text-xs text-gray-500">
-            Diterbitkan untuk Publikasi Resmi Desa Utan Jati
+            Diterbitkan untuk Publikasi Resmi Kedaung Barat
           </p>
           <button
             onClick={onClose}

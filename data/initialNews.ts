@@ -36,7 +36,7 @@ export const KKN_MEMBERS: KKNMember[] = [
 ];
 
 /**
- * DATABANK KEGIATAN KKN & BERITA DESA UTAN JATI
+ * DATABANK KEGIATAN KKN & BERITA KEDAUNG BARAT
  * 
  * Untuk menambah kegiatan KKN / berita baru, Anda cukup menambahkan objek baru
  * ke dalam list `INITIAL_NEWS` di bawah ini!
@@ -49,7 +49,7 @@ export const INITIAL_NEWS: NewsItem[] = [
     category: 'Pendidikan',
     summary: 'Mahasiswa KKN Kelompok 18 Lentera menyelenggarakan edukasi literasi digital bagi para siswa SMA mengenai etika kecerdasan buatan (AI), cegah hoaks, serta strategi cerdas dalam bermedia sosial.',
     content: `
-      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Pada tanggal 15 September 2026, tim mahasiswa KKN (Kelompok 18 Lentera) melaksanakan program sosialisasi literasi teknologi bertajuk <strong>"Bijak Dalam Penggunaan AI & Cerdas Bermedia Sosial"</strong> di aula sekolah SMA setempat.</p>
+      <p class="mb-4"><strong>KEDAUNG BARAT</strong> — Pada tanggal 15 September 2026, tim mahasiswa KKN (Kelompok 18 Lentera) melaksanakan program sosialisasi literasi teknologi bertajuk <strong>"Bijak Dalam Penggunaan AI & Cerdas Bermedia Sosial"</strong> di aula sekolah SMA setempat.</p>
       
       <p class="mb-4">Kegiatan ini bertujuan untuk membekali generasi muda dan pelajar SMA agar memiliki kesadaran kritis serta etika dalam memanfaatkan kecanggihan teknologi Artificial Intelligence (AI) dan platform media sosial sehari-hari.</p>
 
@@ -82,7 +82,7 @@ export const INITIAL_NEWS: NewsItem[] = [
     category: 'UMKM & Ekonomi',
     summary: 'Mahasiswa KKN melaksanakan pendataan usaha lokal serta mendesain dan menyerahkan spanduk promosi usaha gratis untuk meningkatkan daya tarik dan identitas visual UMKM sekitar desa.',
     content: `
-      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Sebagai bentuk dukungan terhadap pertumbuhan ekonomi warga, mahasiswa KKN (Kelompok 18 Lentera) memfasilitasi program pembenahan identitas visual usaha kecil melalui pendataan dan pembuatan spanduk promosi UMKM pada tanggal 7 September 2026.</p>
+      <p class="mb-4"><strong>KEDAUNG BARAT</strong> — Sebagai bentuk dukungan terhadap pertumbuhan ekonomi warga, mahasiswa KKN (Kelompok 18 Lentera) memfasilitasi program pembenahan identitas visual usaha kecil melalui pendataan dan pembuatan spanduk promosi UMKM pada tanggal 7 September 2026.</p>
       
       <p class="mb-4">Tim mahasiswa mendatangi langsung beberapa titik warung dan usaha kuliner warga sekitar, termasuk warung olahan minuman es kelapa kopyor Ibu Halimah, untuk melakukan pengukuran lokasi serta pendataan daftar menu dan kontak usaha.</p>
 
@@ -98,7 +98,7 @@ export const INITIAL_NEWS: NewsItem[] = [
         "Senang sekali warung kami dibantu dibuatkan spanduk baru oleh anak-anak mahasiswa KKN. Tampilannya jadi lebih rapi, segar, dan pembeli dari luar desa jadi gampang menemukan tempat usaha kami," tutur pemilik usaha warung.
       </blockquote>
 
-      <p class="mb-4">Melalui inisiatif ini, diharapkan pelaku UMKM lokal Desa Utan Jati semakin percaya diri dan mampu meningkatkan volume penjualan usaha mereka secara berkelanjutan.</p>
+      <p class="mb-4">Melalui inisiatif ini, diharapkan pelaku UMKM lokal Kedaung Barat semakin percaya diri dan mampu meningkatkan volume penjualan usaha mereka secara berkelanjutan.</p>
     `,
     date: '7 September 2026',
     author: 'Kelompok 18 KKN Lentera',
@@ -115,7 +115,7 @@ export const INITIAL_NEWS: NewsItem[] = [
     category: 'Kegiatan KKN',
     summary: 'Mahasiswa KKN bersama panitia masjid dan warga desa bergotong royong membungkus ratusan paket konsumsi dan penataan ruang untuk peringatan Maulid Nabi.',
     content: `
-      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Menjelang peringatan hari besar Islam Maulid Nabi Muhammad SAW, mahasiswa KKN (Kelompok 18 Lentera) turut ambil bagian dalam aksi gotong royong membantu panitia pengurus masjid dan warga desa pada tanggal 5 September 2026.</p>
+      <p class="mb-4"><strong>KEDAUNG BARAT</strong> — Menjelang peringatan hari besar Islam Maulid Nabi Muhammad SAW, mahasiswa KKN (Kelompok 18 Lentera) turut ambil bagian dalam aksi gotong royong membantu panitia pengurus masjid dan warga desa pada tanggal 5 September 2026.</p>
       
       <p class="mb-4">Sejak pagi hari, anggota kelompok KKN putra dan putri tampak antusias berkumpul bersama bapak-bapak dan ibu-ibu warga untuk menyiapkan logistik dan kemasan konsumsi acara.</p>
 
@@ -131,7 +131,7 @@ export const INITIAL_NEWS: NewsItem[] = [
         "Kehadiran anak-anak KKN sangat membantu pekerjaan panitia. Semangat dan keceriaan mereka membungkus konsumsi bersama warga tua muda menciptakan keakraban yang luar biasa," ungkap pengurus panitia Maulid Nabi.
       </blockquote>
 
-      <p class="mb-4">Kegiatan gotong royong ditutup dengan makan bersama dan doa keselamatan untuk kelancaran seluruh rangkaian acara peringatan Maulid Nabi Muhammad SAW di Desa Utan Jati.</p>
+      <p class="mb-4">Kegiatan gotong royong ditutup dengan makan bersama dan doa keselamatan untuk kelancaran seluruh rangkaian acara peringatan Maulid Nabi Muhammad SAW di Kedaung Barat.</p>
     `,
     date: '5 September 2026',
     author: 'Kelompok 18 KKN Lentera',
@@ -148,7 +148,7 @@ export const INITIAL_NEWS: NewsItem[] = [
     category: 'Kegiatan KKN',
     summary: 'Mahasiswa KKN menyelenggarakan edukasi cegah judi online dan jebakan pinjaman online ilegal bersama warga masyarakat dan tokoh desa untuk memperkuat ketahanan finansial keluarga.',
     content: `
-      <p class="mb-4"><strong>DESA UTAN JATI</strong> — Pada tanggal 3 September 2026, Mahasiswa KKN (Kelompok 18 Lentera) menggelar program sosialisasi dan edukasi literasi digital mengenai <strong>"Bahaya Judi Online (Judol) & Pinjaman Online (Pinjol) Ilegal"</strong> bertempat di lingkungan posko warga.</p>
+      <p class="mb-4"><strong>KEDAUNG BARAT</strong> — Pada tanggal 3 September 2026, Mahasiswa KKN (Kelompok 18 Lentera) menggelar program sosialisasi dan edukasi literasi digital mengenai <strong>"Bahaya Judi Online (Judol) & Pinjaman Online (Pinjol) Ilegal"</strong> bertempat di lingkungan posko warga.</p>
       
       <p class="mb-4">Kegiatan ini diselenggarakan sebagai langkah responsif dalam melindungi ekonomi dan ketenteraman keluarga warga dari maraknya kejahatan finansial berbasis digital yang kian meresahkan.</p>
 

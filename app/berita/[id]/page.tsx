@@ -10,7 +10,7 @@ export default function SingleNewsPage({ params }: { params: Promise<{ id: strin
   const [news, setNews] = useState<NewsItem | null>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem('utan_jati_news');
+    const saved = localStorage.getItem('kedaung_barat_news') || localStorage.getItem('utan_jati_news');
     let all: NewsItem[] = INITIAL_NEWS;
     if (saved) {
       try {

@@ -28,24 +28,24 @@ export default function Home() {
             <div className="flex items-center gap-4 flex-wrap">
               <img
                 src="/images/logo-desa.png"
-                alt="Logo Resmi Desa Kedaung Barat"
+                alt="Logo Resmi Kedaung Barat"
                 className="h-16 w-auto object-contain drop-shadow-xl"
               />
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600/60 text-emerald-200 text-xs font-bold tracking-wide">
                 <SparklesIcon className="w-4 h-4 text-emerald-300" />
-                <span>Portal Resmi Pemerintah Desa Kedaung Barat</span>
+                <span>Portal Resmi Pemerintah Kedaung Barat</span>
               </div>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
               Selamat Datang di <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
-                Desa Kedaung Barat
+                Kedaung Barat
               </span>
             </h1>
 
             <p className="text-emerald-100/90 text-base sm:text-lg leading-relaxed font-normal">
-              Portal resmi publikasi informasi profil desa, sejarah kepemimpinan, potensi UMKM lokal, serta keasrian Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang.
+              Portal resmi publikasi informasi profil desa, sejarah kepemimpinan, potensi UMKM lokal, serta keasrian Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang.
             </p>
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
@@ -76,10 +76,10 @@ export default function Home() {
               Sambutan Kepala Desa
             </div>
             <h3 className="text-2xl font-extrabold text-gray-900 leading-tight">
-              "Membangun Desa Kedaung Barat yang Berdaya, Asri & Rukun"
+              "Membangun Kedaung Barat yang Berdaya, Asri & Rukun"
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed italic">
-              "Selamat datang di portal informasi resmi Desa Kedaung Barat. Kami senantiasa berkomitmen memberikan pelayanan terbaik bagi seluruh warga, mendorong kemajuan usaha UMKM lokal, serta menjaga keasrian dan kerukunan lingkungan desa tercinta."
+              "Selamat datang di portal informasi resmi Kedaung Barat. Kami senantiasa berkomitmen memberikan pelayanan terbaik bagi seluruh warga, mendorong kemajuan usaha UMKM lokal, serta menjaga keasrian dan kerukunan lingkungan desa tercinta."
             </p>
 
             <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-base">Sarnin Ayub, SH</p>
-                <p className="text-xs text-emerald-700 font-semibold">Kepala Desa Kedaung Barat</p>
+                <p className="text-xs text-emerald-700 font-semibold">Kepala Kedaung Barat</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="shrink-0 p-4 bg-emerald-50 rounded-2xl border border-emerald-100 hidden lg:block">
             <img
               src="/images/logo-desa.png"
-              alt="Logo Desa Kedaung Barat"
+              alt="Logo Kedaung Barat"
               className="w-32 h-auto object-contain"
             />
           </div>
@@ -148,10 +148,10 @@ export default function Home() {
               Pemberdayaan Ekonomi Warga
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Dukung Usaha UMKM Sekitar Desa Kedaung Barat
+              Dukung Usaha UMKM Sekitar Kedaung Barat
             </h2>
             <p className="text-emerald-100/80 text-sm leading-relaxed">
-              Jelajahi berbagai usaha kuliner khas desa, warung sembako, rumah makan, konter pulsa digital, serta produk UMKM warga Desa Kedaung Barat.
+              Jelajahi berbagai usaha kuliner khas desa, warung sembako, rumah makan, konter pulsa digital, serta produk UMKM warga Kedaung Barat.
             </p>
           </div>
 
@@ -165,15 +165,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. POTENSI UNGGULAN DESA KEDAUNG BARAT */}
+      {/* 5. POTENSI UNGGULAN KEDAUNG BARAT */}
       <section className="bg-emerald-900/10 py-16 border-y border-emerald-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-emerald-950 mb-3">
-              Potensi Unggulan Desa Kedaung Barat
+              Potensi Unggulan Kedaung Barat
             </h2>
             <p className="text-gray-600 text-sm">
-              Sektor-sektor utama yang menjadi penggerak ekonomi, sosial, dan keasrian lingkungan di Desa Kedaung Barat.
+              Sektor-sektor utama yang menjadi penggerak ekonomi, sosial, dan keasrian lingkungan di Kedaung Barat.
             </p>
           </div>
 

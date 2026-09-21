@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="space-y-16 pb-16">
-      
+
       {/* 1. HERO SECTION */}
       <section className="relative bg-emerald-950 text-white overflow-hidden py-20 lg:py-28">
         <div className="absolute inset-0 z-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
@@ -24,11 +24,19 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6">
-            
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600/60 text-emerald-200 text-xs font-bold tracking-wide">
-              <SparklesIcon className="w-4 h-4 text-emerald-300" />
-              <span>Portal Resmi KKN Tematik 2026 • Desa Utan Jati</span>
+
+            <div className="flex items-center gap-4 flex-wrap">
+              <img
+                src="/images/logo-desa.png"
+                alt="Logo Resmi Desa Utan Jati"
+                className="h-16 w-auto object-contain drop-shadow-xl"
+              />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600/60 text-emerald-200 text-xs font-bold tracking-wide">
+                <SparklesIcon className="w-4 h-4 text-emerald-300" />
+                <span>Portal Resmi KKN Tematik 2026 • Desa Utan Jati</span>
+              </div>
             </div>
+
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
               Selamat Datang di <br />
@@ -38,7 +46,7 @@ export default function Home() {
             </h1>
 
             <p className="text-emerald-100/90 text-base sm:text-lg leading-relaxed font-normal">
-              Wadah publikasi resmi kegiatan pengabdian masyarakat mahasiswa Kuliah Kerja Nyata (KKN) serta pengenalan profil, potensi UMKM olahan jati, dan keasrian Desa Utan Jati.
+              Wadah publikasi resmi kegiatan pengabdian masyarakat mahasiswa Kuliah Kerja Nyata (KKN) serta pengenalan profil, potensi UMKM lokal, dan keasrian Desa Utan Jati.
             </p>
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
@@ -46,7 +54,7 @@ export default function Home() {
                 href="/berita"
                 className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-emerald-950 font-bold text-sm shadow-xl shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
               >
-                <span>Lihat Kegiatan KKN</span>
+                <span>Lihat Berita Desa</span>
                 <ChevronRightIcon className="w-4 h-4" />
               </Link>
               <Link
@@ -58,53 +66,13 @@ export default function Home() {
             </div>
 
           </div>
-
-          {/* QUICK STATS CARDS */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Jumlah Penduduk</p>
-              <p className="text-xl sm:text-2xl font-black text-white mt-1">{VILLAGE_STATS.population}</p>
-              <span className="text-[10px] text-emerald-400">Jiwa</span>
-            </div>
-
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Kepala Keluarga</p>
-              <p className="text-xl sm:text-2xl font-black text-white mt-1">{VILLAGE_STATS.households}</p>
-              <span className="text-[10px] text-emerald-400">KK Terdata</span>
-            </div>
-
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Luas Wilayah</p>
-              <p className="text-xl sm:text-2xl font-black text-white mt-1">{VILLAGE_STATS.areaSize}</p>
-              <span className="text-[10px] text-emerald-400">Hektar</span>
-            </div>
-
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Wilayah Dusun</p>
-              <p className="text-xl sm:text-2xl font-black text-white mt-1">{VILLAGE_STATS.hamlets}</p>
-              <span className="text-[10px] text-emerald-400">Wilayah RT/RW</span>
-            </div>
-
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Tim KKN Active</p>
-              <p className="text-xl sm:text-2xl font-black text-emerald-300 mt-1">{VILLAGE_STATS.kknStudents}</p>
-              <span className="text-[10px] text-emerald-400">Anggota Tim</span>
-            </div>
-
-            <div className="bg-emerald-900/50 backdrop-blur-md p-4 rounded-2xl border border-emerald-800/80">
-              <p className="text-xs text-emerald-300 font-medium">Usaha UMKM</p>
-              <p className="text-xl sm:text-2xl font-black text-emerald-300 mt-1">{VILLAGE_STATS.umkmCount}</p>
-              <span className="text-[10px] text-emerald-400">Sentra Pengrajin</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
       {/* 2. SAMBUTAN KADES & KETUA KKN */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+
           <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-emerald-100 flex flex-col justify-between">
             <div>
               <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">
@@ -114,7 +82,7 @@ export default function Home() {
                 "Menggandeng Generasi Muda untuk Kejayaan Desa"
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed italic mb-6">
-                "Kehadiran teman-teman mahasiswa KKN memberikan energi baru bagi Desa Utan Jati. Kami mengapresiasi setiap program kerja baik di bidang digitalisasi, kesehatan, hingga pengembangan UMKM kerajinan kayu jati desa kita."
+                "Kehadiran teman-teman mahasiswa KKN memberikan energi baru bagi Desa Utan Jati. Kami mengapresiasi setiap program kerja baik di bidang digitalisasi, kesehatan, hingga pengembangan UMKM sekitar desa kita."
               </p>
             </div>
 
@@ -123,11 +91,12 @@ export default function Home() {
                 UJ
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-sm">H. Sulaeman, S.Sos.</p>
+                <p className="font-bold text-gray-900 text-sm">Sarnin Ayub, SH</p>
                 <p className="text-xs text-emerald-700 font-medium">Kepala Desa Utan Jati</p>
               </div>
             </div>
           </div>
+
 
           <div className="bg-gradient-to-br from-emerald-900 to-teal-950 p-6 sm:p-8 rounded-3xl text-white shadow-md flex flex-col justify-between">
             <div>
@@ -193,7 +162,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. POTENSI UNGGULAN DESA UTAN JATI */}
+      {/* 4. SEKSI JELAJAH UMKM DESA */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-emerald-900 to-teal-950 text-white p-8 sm:p-12 rounded-3xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="space-y-3 max-w-2xl">
+            <div className="inline-block bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-400/20">
+              Pemberdayaan Ekonomi Warga
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+              Dukung Usaha UMKM Sekitar Desa Utan Jati
+            </h2>
+            <p className="text-emerald-100/80 text-sm leading-relaxed">
+              Jelajahi berbagai usaha kuliner khas desa, warung sembako, rumah makan, konter pulsa digital, serta produk UMKM warga Desa Utan Jati.
+            </p>
+          </div>
+
+          <Link
+            href="/umkm"
+            className="px-6 py-3.5 rounded-2xl bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-bold text-sm shadow-lg transition flex items-center gap-2 shrink-0"
+          >
+            <span>Lihat Katalog UMKM</span>
+            <ChevronRightIcon className="w-4 h-4 text-emerald-950" />
+          </Link>
+        </div>
+      </section>
+
+      {/* 5. POTENSI UNGGULAN DESA UTAN JATI */}
       <section className="bg-emerald-900/10 py-16 border-y border-emerald-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -207,14 +201,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100">
-              <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-4">
-                🪵
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">
+                🏪
               </div>
-              <h3 className="font-bold text-lg text-gray-900 mb-2">Kerajinan Kayu & Ukiran Jati</h3>
+              <h3 className="font-bold text-lg text-gray-900 mb-2">Usaha Mikro & Perdagangan Desa</h3>
               <p className="text-gray-600 text-xs leading-relaxed">
-                Sentra olahan kayu jati kualitas tinggi dengan berbagai produk ukiran, furniture rumah tangga, hingga souvenir estetik ramah lingkungan.
+                Aneka warung kuliner lezat, rumah makan tradisional, toko sembako harian, serta konter layanan digital yang digerakkan oleh warga lokal.
               </p>
             </div>
+
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100">
               <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl mb-4">

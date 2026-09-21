@@ -178,10 +178,11 @@ export const INITIAL_NEWS: NewsItem[] = [
 ];
 
 export const VILLAGE_STATS = {
-  population: '3.420',
-  households: '860',
-  areaSize: '450 Ha',
-  hamlets: '4 Dusun',
+  population: '10.813',
+  households: '27 RT / 5 RW',
+  areaSize: '225 Ha',
+  hamlets: '4 Kejaroan',
   kknStudents: '12 Mahasiswa',
-  umkmCount: '32 Usaha'
+  umkmCount: '5 Usaha'
 };
+

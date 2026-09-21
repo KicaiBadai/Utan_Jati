@@ -13,11 +13,14 @@ export default function Footer() {
           {/* Col 1: About Village & KKN */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center text-emerald-950 font-black text-lg">
-                UJ
-              </div>
+              <img
+                src="/images/logo-desa.png"
+                alt="Logo Desa Utan Jati"
+                className="h-11 w-auto object-contain p-0.5 bg-white/10 rounded-lg"
+              />
               <span className="font-bold text-xl text-white tracking-tight">DESA UTAN JATI</span>
             </div>
+
             <p className="text-xs leading-relaxed text-emerald-300/80">
               Portal resmi informasi profil Desa Utan Jati dan publikasi rekapitulasi program pengabdian masyarakat Tim KKN Tematik 2026.
             </p>
@@ -43,7 +46,7 @@ export default function Footer() {
                 <Link href="/berita" className="hover:text-emerald-300 transition-colors">Berita & Kegiatan KKN</Link>
               </li>
               <li>
-                <Link href="/galeri" className="hover:text-emerald-300 transition-colors">Galeri Dokumentasi</Link>
+                <Link href="/umkm" className="hover:text-emerald-300 transition-colors">Katalog UMKM Desa</Link>
               </li>
               <li>
                 <Link href="/kontak" className="hover:text-emerald-300 transition-colors">Kontak & Layanan Warga</Link>
@@ -111,12 +114,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-emerald-400/70 gap-4">
           <p>© 2026 Government Profile Desa Utan Jati & Tim KKN Tematik. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <span className="bg-emerald-900/40 text-emerald-300 px-3 py-1 rounded-full text-[11px] border border-emerald-800">
-              Dibuat dengan Next.js & Tailwind CSS
-            </span>
-          </div>
         </div>
+
       </div>
     </footer>
   );

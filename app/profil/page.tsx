@@ -3,86 +3,350 @@ import { VILLAGE_STATS, KKN_MEMBERS } from '../../data/initialNews';
 import { SparklesIcon, TreeIcon, MapPinIcon, UserIcon } from '../../components/Icons';
 
 export const metadata = {
-  title: "Profil Desa Utan Jati - Sejarah, Visi Misi & Demografi",
-  description: "Informasi resmi mengenai sejarah berdiri, visi dan misi pembangunan, serta demografi penduduk Desa Utan Jati.",
+  title: "Profil Desa Kedaung Barat - Sejarah, Geografis, Demografi & Sarana Prasarana",
+  description: "Informasi resmi mengenai sejarah berdiri, silsilah kepemimpinan, letak geografis, demografi penduduk, serta sarana prasarana Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang.",
 };
 
 export default function ProfilPage() {
   const pemdesList = [
-    { name: 'H. Sulaeman, S.Sos.', role: 'Kepala Desa' },
-    { name: 'Bambang Sukojo, S.E.', role: 'Sekretaris Desa' },
-    { name: 'Sri Rahayu', role: 'Kaur Keuangan & Perencanaan' },
-    { name: 'Kuswanto', role: 'Kasi Pemerintahan & Kesejahteraan' },
+    { name: 'Sarnin Ayub, SH', role: 'Kepala Desa' },
+    { name: 'Mariadi', role: 'Sekretaris Desa' },
+    { name: 'Aeb Saipudin', role: 'Ketua RT' },
+    { name: 'Indra', role: 'Ketua Karang Taruna' },
+  ];
+
+  const kadesHistory = [
+    { no: 1, name: 'Lurah Tamin (Pitang Bin Karang)', period: '1946 – 1966', note: 'Putra daerah pertama memimpin (2 periode @ 10 thn)' },
+    { no: 2, name: 'Ahmad Bin Ali', period: '1967', note: 'Menjabat kurang lebih 1 tahun' },
+    { no: 3, name: 'HM Rais Bin Misat', period: '1967 – 1977', note: 'Menjabat 10 tahun' },
+    { no: 4, name: 'Adi Yasan', period: '1978 – 1988', note: 'Menjabat 1 periode' },
+    { no: 5, name: 'Sadin Nasain', period: '1988 – 2005', note: 'Menjabat 2 periode' },
+    { no: 6, name: 'Sainin Wijaya Karma', period: '2006 – 2012', note: 'Menjabat 1 periode' },
+    { no: 7, name: 'Suhendri Sukri', period: '2013 – 2017', note: 'Menjabat 1 periode' },
+    { no: 8, name: 'PJ. H. Ahmad Frengky, S.H.', period: '2017 – 2019', note: 'Penjabat Kepala Desa (~2 tahun)' },
+    { no: 9, name: 'Sarnin Ayub (Terpilih)', period: '01 Des 2019', note: 'Mantan Sekretaris Desa Kedaung Barat' },
+    { no: 10, name: 'Bapak Sarnin Ayub', period: '2019 – 2025', note: 'Kepala Desa Aktif Periode 2019-2025' },
+  ];
+
+  const saranaPendidikan = [
+    { name: 'Taman Kanak – Kanak (TK)', qty: '3 unit' },
+    { name: 'SD / Sederajat', qty: '4 unit' },
+    { name: 'SMP / Sederajat', qty: '1 unit' },
+    { name: 'SMA / Sederajat', qty: '1 unit' },
+    { name: 'Pondok Pesantren', qty: '1 unit' },
+    { name: 'Majelis Ta’lim', qty: '2 unit' },
+  ];
+
+  const saranaPeribadatan = [
+    { name: 'Masjid', qty: '4 unit' },
+    { name: 'Mushalla', qty: '16 unit' },
+    { name: 'Gereja', qty: '2 unit' },
+    { name: 'Vihara', qty: '4 unit' },
+  ];
+
+  const saranaPemerintahan = [
+    { name: 'Kantor Desa', qty: '1 unit' },
+    { name: 'Kantor Kecamatan', qty: '1 unit' },
+    { name: 'Balai Pertemuan & Aula', qty: '1 unit' },
+    { name: 'Pos Kamling', qty: '20 unit' },
+  ];
+
+  const saranaKesehatan = [
+    { name: 'Pos Yandu', qty: '8 unit' },
+    { name: 'Puskesmas', qty: '1 unit' },
+  ];
+
+  const saranaOlahraga = [
+    { name: 'Lapangan Sepak Bola', qty: '2 unit' },
+    { name: 'Lapangan Futsal', qty: '1 unit' },
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       
-      {/* Banner Profil */}
+      {/* Banner Profil Header */}
       <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white p-8 sm:p-14 rounded-3xl shadow-xl relative overflow-hidden">
-        <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 text-emerald-200 text-xs font-bold border border-emerald-700">
-            <TreeIcon className="w-4 h-4 text-emerald-300" />
-            <span>Profil Resmi Desa Utan Jati</span>
+        <div className="relative z-10 max-w-4xl space-y-4">
+          <div className="flex items-center gap-4 flex-wrap">
+            <img
+              src="/images/logo-desa.png"
+              alt="Logo Resmi Kabupaten Tangerang - Desa Kedaung Barat"
+              className="h-20 w-auto object-contain drop-shadow-xl"
+            />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 text-emerald-200 text-xs font-bold border border-emerald-700">
+              <TreeIcon className="w-4 h-4 text-emerald-300" />
+              <span>Profil Resmi Desa Kedaung Barat</span>
+            </div>
           </div>
+
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Mengenal Lebih Dekat Desa Utan Jati
+            Desa Kedaung Barat
           </h1>
-          <p className="text-emerald-100/90 text-base leading-relaxed">
-            Desa yang subur, berbudaya tinggi, serta menjadi pusat pengrajin kayu jati lokal yang berkomitmen menuju desa digital mandiri.
+          <p className="text-emerald-100/90 text-base sm:text-lg leading-relaxed max-w-3xl">
+            Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten. Desa berdaya yang menjunjung tinggi toleransi umat beragama, keasrian lingkungan, serta pelayanan masyarakat digital.
           </p>
         </div>
       </div>
 
-      {/* Visi & Misi */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        
-        <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 lg:col-span-1 flex flex-col justify-center bg-gradient-to-b from-emerald-50/50 to-white">
-          <div className="w-12 h-12 bg-emerald-800 text-white font-bold rounded-2xl flex items-center justify-center text-xl mb-4">
-            🌟
+      {/* A. SEJARAH DESA KEDAUNG BARAT */}
+      <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
+        <div className="border-b border-gray-100 pb-4">
+          <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+            Bagian A
           </div>
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-3">Visi Desa Utan Jati</h2>
-          <p className="text-gray-700 text-sm leading-relaxed italic border-l-4 border-emerald-600 pl-4 py-1">
-            "Terwujudnya Desa Utan Jati yang Sejahtera, Mandiri, Berbasis Potensi Lokal Jati & Pertanian, Serta Unggul Dalam Digitalisasi Pelayanan Masyarakat."
-          </p>
-        </div>
-
-        <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 lg:col-span-2">
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-6 flex items-center gap-2">
-            <span>Misi Utama Pembangunan Desa</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+            Sejarah Desa Kedaung Barat
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="w-7 h-7 rounded-lg bg-emerald-700 text-white font-bold flex items-center justify-center text-xs mb-2">1</span>
-              <h3 className="font-bold text-gray-900 text-sm mb-1">Pemberdayaan Ekonomi UMKM</h3>
-              <p className="text-xs text-gray-600">Mengembangkan potensi produk olahan kayu jati dan hasil tani warga ke pasar nasional.</p>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="w-7 h-7 rounded-lg bg-emerald-700 text-white font-bold flex items-center justify-center text-xs mb-2">2</span>
-              <h3 className="font-bold text-gray-900 text-sm mb-1">Peningkatan Layanan Digital</h3>
-              <p className="text-xs text-gray-600">Mewujudkan transparansi administrasi dan akses informasi publik berbasis website desa.</p>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="w-7 h-7 rounded-lg bg-emerald-700 text-white font-bold flex items-center justify-center text-xs mb-2">3</span>
-              <h3 className="font-bold text-gray-900 text-sm mb-1">Kesehatan & Cegah Stunting</h3>
-              <p className="text-xs text-gray-600">Memperkuat Posyandu dan nutrisi balita bersama tim medis dan kader PKK.</p>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="w-7 h-7 rounded-lg bg-emerald-700 text-white font-bold flex items-center justify-center text-xs mb-2">4</span>
-              <h3 className="font-bold text-gray-900 text-sm mb-1">Kelestarian Lingkungan Dusun</h3>
-              <p className="text-xs text-gray-600">Menjaga kelestarian hutan jati rakyat dan kerapihan sanitasi dusun warga.</p>
-            </div>
-          </div>
         </div>
 
+        <div className="prose prose-emerald max-w-none text-gray-700 text-sm leading-relaxed space-y-4">
+          <p>
+            Desa Kedaung Barat merupakan bagian dari wilayah yang terletak di <strong>Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten</strong>. Mempunyai total luas wilayah sebesar <strong>225 ha</strong>, yang meliputi daratan seluas 110 ha dan persawahan seluas 115 ha.
+          </p>
+          <p>
+            Nama Desa Kedaung Barat ini berasal dari nama pohon <strong>“Kedaung”</strong> yang dahulu tumbuh dalam jumlah banyak di wilayah tersebut, sehingga desa ini dikenal dengan sebutan Kedaung dengan tambahan kata <strong>“Barat”</strong> yang mengartikan bahwa letak desa ini berada di sebelah Barat atau Kulon dari Desa Kedaung Baru. Dahulu Kedaung terbagi menjadi dua bagian yaitu Kedaung Barat dan Kedaung Wetan.
+          </p>
+          <p>
+            Desa Kedaung Barat dipimpin pertama kalinya oleh <strong>Van So She</strong> berkebangsaan Belanda pada zaman Kolonial Belanda sebelum Indonesia merdeka. Kemudian pada tahun 1946 putra daerah memimpin Desa Kedaung Barat untuk pertama kalinya.
+          </p>
+        </div>
+
+        {/* Tabel Riwayat Kepala Desa */}
+        <div className="pt-4 space-y-3">
+          <h3 className="text-base font-bold text-gray-900">Riwayat Kepemimpinan Kepala Desa Kedaung Barat (1946 – Sekarang)</h3>
+          <div className="overflow-x-auto rounded-2xl border border-emerald-100">
+            <table className="w-full text-left text-xs">
+              <thead className="bg-emerald-900 text-white uppercase text-[11px] font-bold">
+                <tr>
+                  <th className="py-3 px-4">No</th>
+                  <th className="py-3 px-4">Nama Kepala Desa</th>
+                  <th className="py-3 px-4">Masa Jabatan</th>
+                  <th className="py-3 px-4">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 bg-white">
+                {kadesHistory.map((row) => (
+                  <tr key={row.no} className="hover:bg-emerald-50/50 transition">
+                    <td className="py-3 px-4 font-bold text-emerald-800">{row.no}</td>
+                    <td className="py-3 px-4 font-bold text-gray-900">{row.name}</td>
+                    <td className="py-3 px-4 font-semibold text-emerald-700">{row.period}</td>
+                    <td className="py-3 px-4 text-gray-600">{row.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
-      {/* KANTOR BALAI DESA / KELURAHAN PHOTO SHOWCASE */}
+      {/* B. LETAK GEOGRAFIS DESA KEDAUNG BARAT */}
+      <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
+        <div className="border-b border-gray-100 pb-4">
+          <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+            Bagian B
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+            Letak Geografis & Batas Wilayah
+          </h2>
+        </div>
+
+        <p className="text-gray-700 text-sm leading-relaxed">
+          Secara topografi, Desa Kedaung Barat memiliki temperatur <strong>29°C – 34°C</strong> sebagai dataran rendah. Desa Kedaung Barat memiliki luas wilayah desa sebesar <strong>225 Ha</strong> (Daratan 110 Ha & Persawahan 115 Ha).
+        </p>
+
+        {/* Grid Batas Wilayah & Akses Jarak */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+          
+          {/* Card Batas Wilayah */}
+          <div className="bg-emerald-50/80 p-6 rounded-2xl border border-emerald-100 space-y-3">
+            <h3 className="font-bold text-emerald-950 text-base flex items-center gap-2">
+              <MapPinIcon className="w-5 h-5 text-emerald-700" />
+              <span>Batas-Batas Wilayah Desa:</span>
+            </h3>
+            <ul className="space-y-2 text-xs text-gray-700">
+              <li className="flex justify-between bg-white p-2.5 rounded-xl border border-emerald-100">
+                <span className="font-bold text-gray-900">Sebelah Utara:</span>
+                <span className="text-emerald-800 font-semibold">Berbatasan dengan Desa Gempolsari</span>
+              </li>
+              <li className="flex justify-between bg-white p-2.5 rounded-xl border border-emerald-100">
+                <span className="font-bold text-gray-900">Sebelah Timur:</span>
+                <span className="text-emerald-800 font-semibold">Berbatasan dengan Desa Kedaung Baru</span>
+              </li>
+              <li className="flex justify-between bg-white p-2.5 rounded-xl border border-emerald-100">
+                <span className="font-bold text-gray-900">Sebelah Selatan:</span>
+                <span className="text-emerald-800 font-semibold">Berbatasan dengan Desa Lebak Wangi</span>
+              </li>
+              <li className="flex justify-between bg-white p-2.5 rounded-xl border border-emerald-100">
+                <span className="font-bold text-gray-900">Sebelah Barat:</span>
+                <span className="text-emerald-800 font-semibold">Berbatasan dengan Desa Jati Mulya</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Card Jarak & Administrasi */}
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 space-y-4">
+            <h3 className="font-bold text-gray-900 text-base">Jarak Ke Pusat Pemerintahan & Administrasi</h3>
+            <p className="text-xs text-gray-600">
+              Secara administrative, Desa Kedaung Barat terdiri dari <strong>27 RT</strong>, <strong>5 RW</strong>, serta terdapat <strong>4 Kejaroan</strong>.
+            </p>
+            <div className="space-y-2 pt-1">
+              <div className="flex justify-between text-xs bg-white p-2.5 rounded-xl border border-gray-200">
+                <span className="text-gray-700 font-medium">Jarak Ke Pusat Kabupaten Tangerang:</span>
+                <span className="font-bold text-emerald-800">15 km</span>
+              </div>
+              <div className="flex justify-between text-xs bg-white p-2.5 rounded-xl border border-gray-200">
+                <span className="text-gray-700 font-medium">Jarak Ke Ibu Kota Provinsi Banten:</span>
+                <span className="font-bold text-emerald-800">68 km</span>
+              </div>
+              <div className="flex justify-between text-xs bg-white p-2.5 rounded-xl border border-gray-200">
+                <span className="text-gray-700 font-medium">Jarak Ke Ibu Kota Negara:</span>
+                <span className="font-bold text-emerald-800">28 km</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* C. STRUKTUR PENDUDUK & DEMOGRAFI */}
+      <div className="bg-emerald-950 text-white p-8 sm:p-10 rounded-3xl space-y-6">
+        <div className="border-b border-emerald-800 pb-4">
+          <div className="inline-block bg-emerald-800 text-emerald-200 text-xs font-bold px-3 py-1 rounded-full mb-2">
+            Bagian C
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
+            Struktur Penduduk Desa Kedaung Barat
+          </h2>
+          <p className="text-xs text-emerald-200 mt-1">
+            Data Demografi Desa Kedaung Barat terdata sampai dengan bulan Desember tahun 2019.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-emerald-900/60 p-6 rounded-2xl border border-emerald-800 text-center space-y-1">
+            <p className="text-xs text-emerald-300 font-bold uppercase">Penduduk Laki-laki</p>
+            <p className="text-3xl font-black text-white">5.237</p>
+            <p className="text-xs text-emerald-400">Jiwa</p>
+          </div>
+          <div className="bg-emerald-900/60 p-6 rounded-2xl border border-emerald-800 text-center space-y-1">
+            <p className="text-xs text-emerald-300 font-bold uppercase">Penduduk Perempuan</p>
+            <p className="text-3xl font-black text-amber-300">5.576</p>
+            <p className="text-xs text-emerald-400">Jiwa (Didominasi sedikit lebih banyak)</p>
+          </div>
+          <div className="bg-emerald-900/80 p-6 rounded-2xl border border-emerald-700 text-center space-y-1">
+            <p className="text-xs text-emerald-200 font-bold uppercase">Total Keadaan Penduduk</p>
+            <p className="text-3xl font-black text-emerald-200">10.813</p>
+            <p className="text-xs text-emerald-300">Jiwa Terdata</p>
+          </div>
+        </div>
+      </div>
+
+      {/* D. SARANA DAN PRASARANA DESA */}
+      <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-8">
+        <div className="border-b border-gray-100 pb-4">
+          <div className="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+            Bagian D
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+            Sarana Dan Prasarana Umum Desa
+          </h2>
+          <p className="text-xs text-gray-500 mt-1">
+            Rincian fasilitas dan sarana prasarana umum Desa Kedaung Barat.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Pendidikan */}
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+              <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">🎓</span>
+              <h3>Sarana & Prasarana Pendidikan</h3>
+            </div>
+            <ul className="space-y-1.5 text-xs">
+              {saranaPendidikan.map((item, i) => (
+                <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
+                  <span className="text-gray-700 font-medium">{item.name}</span>
+                  <span className="font-bold text-emerald-800">{item.qty}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Peribadatan */}
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+              <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">🕌</span>
+              <h3>Sarana Peribadatan (Toleransi)</h3>
+            </div>
+            <p className="text-[11px] text-gray-500 italic">Desa menjunjung tinggi sikap toleransi antar umat beragama.</p>
+            <ul className="space-y-1.5 text-xs">
+              {saranaPeribadatan.map((item, i) => (
+                <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
+                  <span className="text-gray-700 font-medium">{item.name}</span>
+                  <span className="font-bold text-emerald-800">{item.qty}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Pemerintahan */}
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+              <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">🏛️</span>
+              <h3>Sarana Pemerintahan</h3>
+            </div>
+            <ul className="space-y-1.5 text-xs">
+              {saranaPemerintahan.map((item, i) => (
+                <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
+                  <span className="text-gray-700 font-medium">{item.name}</span>
+                  <span className="font-bold text-emerald-800">{item.qty}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Kesehatan */}
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+              <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">🏥</span>
+              <h3>Sarana Kesehatan</h3>
+            </div>
+            <ul className="space-y-1.5 text-xs">
+              {saranaKesehatan.map((item, i) => (
+                <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
+                  <span className="text-gray-700 font-medium">{item.name}</span>
+                  <span className="font-bold text-emerald-800">{item.qty}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Olahraga */}
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-3">
+            <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+              <span className="p-1.5 bg-emerald-700 text-white rounded-lg text-xs">⚽</span>
+              <h3>Sarana Olah Raga</h3>
+            </div>
+            <ul className="space-y-1.5 text-xs">
+              {saranaOlahraga.map((item, i) => (
+                <li key={i} className="flex justify-between bg-white p-2 rounded-lg border border-gray-100">
+                  <span className="text-gray-700 font-medium">{item.name}</span>
+                  <span className="font-bold text-emerald-800">{item.qty}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      {/* KANTOR BALAI DESA SHOWCASE */}
       <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-emerald-100 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-6 rounded-2xl overflow-hidden shadow-md border border-gray-100 max-h-[360px]">
           <img
             src="/images/kantor-kelurahan-desa.png"
-            alt="Kantor Balai Desa Utan Jati"
+            alt="Kantor Balai Desa Kedaung Barat"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         </div>
@@ -94,12 +358,12 @@ export default function ProfilPage() {
             Kantor Balai Desa & Pusat Pelayanan Warga
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Gedung Kantor Balai Desa Utan Jati merupakan pusat pelayanan administrasi publik, musyawarah pembangunan warga, serta menjadi Posko Utama tempat berkordinasi seluruh kegiatan pengabdian masyarakat Tim KKN Kelompok 18 Lentera.
+            Gedung Kantor Balai Desa Kedaung Barat merupakan pusat pelayanan administrasi publik, musyawarah pembangunan warga, serta menjadi Posko Utama tempat berkordinasi seluruh kegiatan pengabdian masyarakat Tim KKN Kelompok 18 Lentera.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold bg-emerald-50 p-3 rounded-xl border border-emerald-100 flex-1">
               <MapPinIcon className="w-4 h-4 shrink-0 text-emerald-600" />
-              <span>Jl. Raya Utan Jati No. 01, Kecamatan Utan</span>
+              <span>Sepatan Timur, Kabupaten Tangerang, Banten</span>
             </div>
             <a
               href="https://maps.app.goo.gl/HRdXevS1LB8iy4386"
@@ -114,52 +378,6 @@ export default function ProfilPage() {
         </div>
       </div>
 
-      {/* Sejarah Singkat Desa Utan Jati */}
-      <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-4">
-        <h2 className="text-2xl font-extrabold text-gray-900">Sejarah Desa Utan Jati</h2>
-        <div className="prose prose-emerald max-w-none text-gray-700 text-sm leading-relaxed space-y-3">
-          <p>
-            Nama <strong>Desa Utan Jati</strong> diambil dari hamparan kawasan hutan pohon jati yang tumbuh subur sejak awal abad ke-20. Dahulu, area ini merupakan wilayah pemukiman yang dikelilingi pepohonan jati rindang dan dialiri oleh dua muara sungai jernih.
-          </p>
-          <p>
-            Secara perlahan, keahlian warga mengolah sisa kayu jati menjadi barang ukiran dan perkakas rumah tangga berkembang pesat dari generasi ke generasi. Kini, Desa Utan Jati telah berkembang menjadi desa berdaya yang memadukan tradisi kerajinan jati dengan pemanfaatan teknologi informasi untuk kesejahteraan masyarakat.
-          </p>
-        </div>
-      </div>
-
-      {/* Demografi & Statistik Penduduk */}
-      <div className="bg-emerald-950 text-white p-8 sm:p-10 rounded-3xl space-y-6">
-        <div className="max-w-xl">
-          <h2 className="text-2xl font-extrabold text-white mb-2">Demografi & Wilayah Desa</h2>
-          <p className="text-xs text-emerald-200">
-            Data statistik kependudukan dan luas cakupan wilayah Desa Utan Jati.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-emerald-900/60 p-4 rounded-2xl border border-emerald-800">
-            <p className="text-xs text-emerald-300">Total Penduduk</p>
-            <p className="text-2xl font-black text-white mt-1">{VILLAGE_STATS.population}</p>
-            <p className="text-[10px] text-emerald-400">Jiwa</p>
-          </div>
-          <div className="bg-emerald-900/60 p-4 rounded-2xl border border-emerald-800">
-            <p className="text-xs text-emerald-300">Kepala Keluarga</p>
-            <p className="text-2xl font-black text-white mt-1">{VILLAGE_STATS.households}</p>
-            <p className="text-[10px] text-emerald-400">KK</p>
-          </div>
-          <div className="bg-emerald-900/60 p-4 rounded-2xl border border-emerald-800">
-            <p className="text-xs text-emerald-300">Luas Wilayah</p>
-            <p className="text-2xl font-black text-white mt-1">{VILLAGE_STATS.areaSize}</p>
-            <p className="text-[10px] text-emerald-400">Hektar</p>
-          </div>
-          <div className="bg-emerald-900/60 p-4 rounded-2xl border border-emerald-800">
-            <p className="text-xs text-emerald-300">Tim Mahasiswa KKN</p>
-            <p className="text-2xl font-black text-emerald-300 mt-1">{VILLAGE_STATS.kknStudents}</p>
-            <p className="text-[10px] text-emerald-400">Kelompok 18 Lentera</p>
-          </div>
-        </div>
-      </div>
-
       {/* STRUKTUR TIM KKN KELOMPOK 18 LENTERA */}
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-6">
@@ -170,7 +388,7 @@ export default function ProfilPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
               Tim Mahasiswa KKN Kelompok 18 Lentera
             </h2>
-            <p className="text-xs text-gray-500 mt-1">Daftar 12 mahasiswa pengabdi di Desa Utan Jati.</p>
+            <p className="text-xs text-gray-500 mt-1">Daftar 12 mahasiswa pengabdi di Desa Kedaung Barat.</p>
           </div>
         </div>
 
@@ -206,11 +424,11 @@ export default function ProfilPage() {
         </div>
       </div>
 
-      {/* Perangkat Desa Utan Jati */}
+      {/* Perangkat Desa Kedaung Barat */}
       <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 space-y-6">
         <div>
           <h2 className="text-2xl font-extrabold text-gray-900">Perangkat Pemerintah Desa</h2>
-          <p className="text-xs text-gray-500 mt-1">Jajaran pemerintahan Desa Utan Jati.</p>
+          <p className="text-xs text-gray-500 mt-1">Jajaran pemerintahan Desa Kedaung Barat.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

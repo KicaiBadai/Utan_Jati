@@ -154,6 +154,24 @@ export default function ProfilPage() {
           Secara topografi, Desa Kedaung Barat memiliki temperatur <strong>29°C – 34°C</strong> sebagai dataran rendah. Desa Kedaung Barat memiliki luas wilayah desa sebesar <strong>225 Ha</strong> (Daratan 110 Ha & Persawahan 115 Ha).
         </p>
 
+        {/* Tampilan Gambar Peta Satelit Google Maps Kedaung Barat */}
+        <div className="space-y-2 pt-2">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-100 shadow-md group bg-gray-900">
+            <img
+              src="/images/peta-geografis-kedaung-barat.jpg"
+              alt="Gambar 1.1 Peta Letak Geografis Desa Kedaung Barat (Satelit Google Maps)"
+              className="w-full h-auto object-cover max-h-[550px] w-full transition-transform duration-500 group-hover:scale-[1.01]"
+            />
+            <div className="absolute top-4 left-4 bg-emerald-950/80 backdrop-blur-md text-white text-xs font-semibold px-3.5 py-2 rounded-xl flex items-center gap-2 border border-emerald-800 shadow-lg">
+              <MapPinIcon className="w-4 h-4 text-emerald-400" />
+              <span>Gambar 1.1 Peta Satelit Google Maps Wilayah Desa Kedaung Barat</span>
+            </div>
+          </div>
+          <p className="text-xs text-gray-500 italic text-center">
+            Peta Citra Satelit Letak Geografis & Garis Batas Wilayah Desa Kedaung Barat, Sepatan Timur, Tangerang
+          </p>
+        </div>
+
         {/* Grid Batas Wilayah & Akses Jarak */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
           
@@ -358,7 +376,7 @@ export default function ProfilPage() {
             Kantor Balai Desa & Pusat Pelayanan Warga
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Gedung Kantor Balai Desa Kedaung Barat merupakan pusat pelayanan administrasi publik, musyawarah pembangunan warga, serta menjadi Posko Utama tempat berkordinasi seluruh kegiatan pengabdian masyarakat Tim KKN Kelompok 18 Lentera.
+            Gedung Kantor Balai Desa Kedaung Barat merupakan pusat pelayanan administrasi publik serta tempat berlangsungnya berbagai kegiatan musyawarah pembangunan warga.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold bg-emerald-50 p-3 rounded-xl border border-emerald-100 flex-1">

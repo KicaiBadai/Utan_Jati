@@ -1,22 +1,13 @@
-'use client';
+import React from 'react';
+import { MapPinIcon, ClockIcon, ChevronRightIcon } from '../../components/Icons';
 
-import React, { useState } from 'react';
-import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, SparklesIcon, ChevronRightIcon } from '../../components/Icons';
+export const metadata = {
+  title: "Kontak & Lokasi Kantor Desa Kedaung Barat",
+  description: "Alamat resmi kantor balai Desa Kedaung Barat, Sepatan Timur, Kabupaten Tangerang, Banten serta petunjuk rute Google Maps.",
+};
 
 export default function KontakPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: '', phone: '', topic: 'Aspirasi Warga', message: '' });
-
   const mapUrl = "https://maps.app.goo.gl/HRdXevS1LB8iy4386";
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setForm({ name: '', phone: '', topic: 'Aspirasi Warga', message: '' });
-    }, 4000);
-  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
@@ -25,176 +16,108 @@ export default function KontakPage() {
       <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 text-white p-8 sm:p-12 rounded-3xl shadow-xl">
         <div className="max-w-2xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/80 text-emerald-200 text-xs font-bold border border-emerald-700">
-            <PhoneIcon className="w-4 h-4 text-emerald-300" />
-            <span>Pusat Informasi & Layanan</span>
+            <MapPinIcon className="w-4 h-4 text-emerald-300" />
+            <span>Pusat Informasi & Lokasi Desa</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Kontak Posko KKN & Balai Desa
+            Kantor Balai Desa Kedaung Barat
           </h1>
           <p className="text-emerald-100/80 text-sm leading-relaxed">
-            Sampaikan masukan, koordinasi kegiatan KKN, atau pertanyaan seputar pelayanan publik Desa Utan Jati.
+            Informasi alamat resmi Balai Desa Kedaung Barat, Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten.
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        {/* Info Contact Card */}
-        <div className="bg-emerald-950 text-white p-8 rounded-3xl space-y-6 flex flex-col justify-between shadow-lg">
+        {/* Info Card Alamat */}
+        <div className="bg-emerald-950 text-white p-8 sm:p-10 rounded-3xl space-y-6 flex flex-col justify-between shadow-lg">
           <div className="space-y-6">
-            <h2 className="text-2xl font-extrabold text-white">Alamat Sekretariat</h2>
+            <h2 className="text-2xl font-extrabold text-white">Alamat Resmi Balai Desa</h2>
             
-            <div className="space-y-5 text-sm text-emerald-200">
-              <div className="flex items-start gap-3">
-                <MapPinIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="space-y-6 text-sm text-emerald-200">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-emerald-900/80 rounded-2xl border border-emerald-800 shrink-0">
+                  <MapPinIcon className="w-6 h-6 text-emerald-400" />
+                </div>
                 <div className="space-y-2">
-                  <p className="font-bold text-white">Balai Desa & Posko Utama KKN</p>
-                  <p className="text-xs text-emerald-300">
-                    Jl. Raya Utan Jati No. 01, Kecamatan Utan, Jawa Tengah 57400
+                  <p className="font-bold text-white text-base">Kantor Kepala Desa Kedaung Barat</p>
+                  <p className="text-xs text-emerald-300/90 leading-relaxed">
+                    Kecamatan Sepatan Timur, Kabupaten Tangerang, Provinsi Banten (Kode Pos: 15510)
                   </p>
-                  <a
-                    href={mapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-400 text-emerald-950 font-bold text-xs shadow-md hover:bg-emerald-300 transition"
-                  >
-                    <MapPinIcon className="w-4 h-4" />
-                    <span>Petunjuk Lokasi Google Maps</span>
-                  </a>
+                  <div className="pt-2">
+                    <a
+                      href={mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-400 text-emerald-950 font-bold text-xs shadow-md hover:bg-emerald-300 transition"
+                    >
+                      <MapPinIcon className="w-4 h-4" />
+                      <span>Petunjuk Lokasi Google Maps</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 border-t border-emerald-900 pt-4">
-                <PhoneIcon className="w-5 h-5 text-emerald-400 shrink-0" />
-                <div>
-                  <p className="font-bold text-white">Telepon / WhatsApp Posko</p>
-                  <p className="text-xs text-emerald-300">+62 812-3456-7890 (Humas KKN)</p>
+              <div className="flex items-start gap-4 border-t border-emerald-900/80 pt-6">
+                <div className="p-3 bg-emerald-900/80 rounded-2xl border border-emerald-800 shrink-0">
+                  <ClockIcon className="w-6 h-6 text-emerald-400" />
                 </div>
-              </div>
-
-              <div className="flex items-start gap-3 pt-2">
-                <ClockIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-white">Jam Operasional Balai Desa</p>
-                  <p className="text-xs text-emerald-300">Senin - Jumat: 08.00 - 15.30 WIB</p>
+                <div className="space-y-1">
+                  <p className="font-bold text-white text-base">Jam Operasional Kantor Desa</p>
+                  <p className="text-xs text-emerald-300 font-semibold">Senin - Jumat: 08.00 - 15.30 WIB</p>
+                  <p className="text-[11px] text-emerald-400/80">Sabtu & Minggu / Hari Libur Nasional: Tutup</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-emerald-900/60 border border-emerald-800 text-xs text-emerald-300 space-y-1">
-            <p className="font-bold text-white">Posko KKN Standby 24 Jam</p>
-            <p className="text-[11px] text-emerald-300/80">
-              Tim mahasiswa KKN berada di Dusun 1 & Dusun 2 Desa Utan Jati untuk pendampingan warga.
+          <div className="p-4 rounded-2xl bg-emerald-900/50 border border-emerald-800 text-xs text-emerald-300 space-y-1">
+            <p className="font-bold text-white">Pelayanan Masyarakat Desa</p>
+            <p className="text-[11px] text-emerald-300/80 leading-relaxed">
+              Pelayanan administrasi kependudukan dan surat-menyurat warga dilayani langsung di Balai Desa Kedaung Barat pada jam kerja.
             </p>
           </div>
         </div>
 
-        {/* Form Aspirasi Warga */}
-        <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 lg:col-span-2 space-y-6">
-          <div>
-            <h2 className="text-2xl font-extrabold text-gray-900">Formulir Pesan & Aspirasi</h2>
-            <p className="text-xs text-gray-500 mt-1">Kirimkan masukan atau usulan kegiatan untuk Tim KKN dan Perangkat Desa.</p>
-          </div>
-
-          {submitted ? (
-            <div className="bg-emerald-50 border border-emerald-200 text-emerald-900 p-6 rounded-2xl text-center space-y-2">
-              <div className="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto text-xl font-bold">
-                ✓
-              </div>
-              <h3 className="font-bold text-lg">Pesan Berhasil Terkirim!</h3>
-              <p className="text-xs text-emerald-800">
-                Terima kasih. Pesan Anda telah diterima oleh Tim KKN dan Sekretariat Desa Utan Jati.
-              </p>
+        {/* Peta Digital Google Maps Card */}
+        <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-sm border border-emerald-100 flex flex-col justify-between space-y-6">
+          <div className="space-y-4">
+            <div className="inline-flex items-center gap-1.5 text-emerald-800 text-xs font-bold bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
+              <MapPinIcon className="w-3.5 h-3.5 text-emerald-600" />
+              <span>Peta Digital Google Maps</span>
             </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4 text-sm text-gray-800">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block font-bold text-gray-700 mb-1">Nama Lengkap</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Nama Anda"
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                  />
-                </div>
+            <h2 className="text-2xl font-extrabold text-gray-900">Petunjuk Arah Rute Google Maps</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Anda dapat mengklik tombol petunjuk arah di bawah ini untuk menavigasi rute perjalanan secara akurat menuju Kantor Balai Desa Kedaung Barat melalui Google Maps.
+            </p>
 
-                <div>
-                  <label className="block font-bold text-gray-700 mb-1">Nomor WhatsApp / HP</label>
-                  <input
-                    type="tel"
-                    placeholder="0812xxxxxxx"
-                    value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                  />
-                </div>
+            <div className="relative overflow-hidden rounded-2xl border border-emerald-100 shadow-sm bg-gray-900 mt-4">
+              <img
+                src="/images/peta-geografis-kedaung-barat.jpg"
+                alt="Peta Satelit Desa Kedaung Barat"
+                className="w-full h-48 object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                <span className="text-white text-xs font-semibold">Wilayah Desa Kedaung Barat, Sepatan Timur</span>
               </div>
-
-              <div>
-                <label className="block font-bold text-gray-700 mb-1">Topik Pesan</label>
-                <select
-                  value={form.topic}
-                  onChange={(e) => setForm({ ...form, topic: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white transition"
-                >
-                  <option value="Aspirasi Warga">Aspirasi & Masukan Warga</option>
-                  <option value="Kegiatan KKN">Koordinasi Program KKN</option>
-                  <option value="UMKM">Kemitraan UMKM Jati</option>
-                  <option value="Lainnya">Pertanyaan Lainnya</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block font-bold text-gray-700 mb-1">Isi Pesan / Aspirasi</label>
-                <textarea
-                  required
-                  rows={4}
-                  placeholder="Tuliskan pesan Anda..."
-                  value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-3 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-sm shadow-md transition cursor-pointer"
-              >
-                Kirim Pesan Ke Posko
-              </button>
-            </form>
-          )}
-        </div>
-
-      </div>
-
-      {/* GOOGLE MAPS SHOWCASE BOX */}
-      <div className="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="space-y-2 max-w-xl">
-          <div className="inline-flex items-center gap-1.5 text-emerald-800 text-xs font-bold bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-            <MapPinIcon className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Peta Digital Balai Desa</span>
+            </div>
           </div>
-          <h2 className="text-2xl font-extrabold text-gray-900">Lokasi Google Maps Balai Desa & Posko KKN</h2>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Klik tombol di samping untuk langsung membuka rute petunjuk arah menuju Balai Desa Utan Jati di aplikasi Google Maps HP atau browser Anda.
-          </p>
+
+          <div className="pt-2">
+            <a
+              href={mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-700 to-teal-700 text-white font-bold text-sm shadow-md hover:shadow-emerald-700/30 hover:scale-[1.01] transition flex items-center justify-center gap-2"
+            >
+              <MapPinIcon className="w-5 h-5" />
+              <span>Buka di Aplikasi Google Maps</span>
+              <ChevronRightIcon className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
-        <a
-          href={mapUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold text-sm shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.02] transition flex items-center gap-2 shrink-0"
-        >
-          <MapPinIcon className="w-5 h-5" />
-          <span>Buka di Google Maps</span>
-          <ChevronRightIcon className="w-4 h-4" />
-        </a>
       </div>
 
     </div>

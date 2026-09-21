@@ -183,6 +183,6 @@ export const VILLAGE_STATS = {
   areaSize: '225 Ha',
   hamlets: '4 Kejaroan',
   kknStudents: '12 Mahasiswa',
-  umkmCount: '5 Usaha'
+  umkmCount: '8 Usaha'
 };
 
